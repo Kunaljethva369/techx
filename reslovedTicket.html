@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resloved Tickets</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <img class="headerLogo" src="/Assets/techxpert-logo 1.png">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+            <div class="raiseticket">
+                <button class="raiseticketbtn">Rasie a Ticket</button>
+            </div>
+            <div class="notification">
+                <img src="/Assets/notification.png">
+            </div>
+            <div class="profile">
+                <h4>Harsh Mehta</h4>
+                <div class="shortForm">
+                    <span>HM</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="pendingTicket">
+            <h2 class="heading">My Tickets</h2>
+            <h5 class="subHeading">Manage your tickets or create new one quickly!</h5>
+            <div class="statusBtnContainer">
+                <button class="statusBtn">Pending</button>
+                <button class="statusBtn active">Resloved</button>
+            </div>
+            <div class="ticketInfoContainer">
+                <div class="ticketInfoCard">
+                    <div class="newIssue">
+                        <div class="dottedLine">
+                            <img src="/Assets/addsign.png">
+                        </div>
+                        <p>New Issue</p>
+                    </div>
+                    <button class="raiseticketbtn raisebtnissue">Rasie a Ticket</button>
+                </div>
+                <div class="ticketInfoCard">
+                    <div class="priorityCards">
+                        <div class="tagCapsuel Orange">
+                            <img src="/Assets/organetag.png">
+                            <p>High Priority</p>
+                        </div>
+                        <div class="ticketName">
+                            <p>Cisco N-512# XZ</p>
+                            <span class="capsuelYear">2021</span>
+                        </div>
+                        <div class="ticketDate">
+                            <span>Raised on</span>
+                            18 Jul’23
+                        </div>
+                        <div class="statusCapsuel resloved">
+                            <img src="/Assets/tick.png">
+                            <p>Resloved</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticketInfoCard">
+                    <div class="priorityCards">
+                        <div class="tagCapsuel Blue">
+                            <img src="/Assets/blueTag.png">
+                            <p>Medium Priority</p>
+                        </div>
+                        <div class="ticketName">
+                            <p>Cisco N-512# XZ</p>
+                            <span class="capsuelYear">2021</span>
+                        </div>
+                        <div class="ticketDate">
+                            <span>Raised on</span>
+                            18 Jul’23
+                        </div>
+                        <div class="statusCapsuel resloved">
+                            <img src="/Assets/tick.png">
+                            <p>Resloved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

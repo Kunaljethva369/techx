@@ -1,0 +1,662 @@
+/* CSS Reset Start */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+    margin: 0px;
+    padding: 0px;
+    font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    font-family: 'Lato';
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+    max-width: 100%;
+    display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* CSS Reset END */
+
+
+.dnone {
+    display: none;
+}
+
+.container {
+    max-width: 1362px;
+    height: 100vh;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    gap: 110px;
+    padding: 0px 20px;
+}
+
+
+.formContainer {
+    box-shadow: 2px 2px 64px 0px #0000001A;
+    background-color: white;
+    /* height: 560px; */
+    border-radius: 15px;
+    padding: 0px 78px;
+    max-width: 460px;
+    text-align: center;
+}
+
+.logoImg {
+    margin: 36px auto auto;
+}
+
+.tagLine {
+    color: #343434;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.signUpSocial {
+    display: flex;
+}
+
+.googleSign {
+    cursor: pointer;
+    /* margin: 38px auto auto; */
+    margin: 38px 24px 0px 24px;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    border: 1px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.googleSign span {
+    font-weight: 500;
+}
+
+.line {
+    width: 303px;
+    border: 1px;
+    border: 1px solid #E6E6E6;
+    margin: 22px auto;
+}
+
+.form input {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #D7D7D7;
+    padding-left: 19px;
+    font-weight: 400;
+    outline: none;
+}
+
+.form .formInputMT {
+    margin-top: 15px;
+}
+
+.form .passwordEye {
+    position: relative;
+}
+
+.form .passwordEye img {
+    position: absolute;
+    top: 46%;
+    right: 14px;
+    cursor: pointer;
+}
+
+.formSubmitBtn {
+    width: 100%;
+    height: 50px;
+    background-color: #EC6C21;
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 400;
+    margin-top: 22px;
+}
+
+.formSubmitLight {
+    opacity: 50%;
+}
+
+.tnc {
+    color: #8A8A8A;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.tnc a {
+    color: #8A8A8A;
+}
+
+.switchTag {
+    margin-top: 44px;
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin-bottom: 24px;
+}
+
+.switchTag a {
+    color: #EC6C21;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-decoration: underline;
+}
+
+/* Error Pop Up */
+.ErroContainer {
+    position: fixed;
+    bottom: 46px;
+    max-width: 1362px;
+    left: 47%;
+    transform: translate(-47%);
+    font-family: lato;
+}
+
+.errorpopup {
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    max-width: 401px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.errorpopup img {
+    padding: 22px 19px 22px 17px;
+}
+
+.errorpopup p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #FFFFFF;
+    max-width: 70%;
+}
+
+.errorpopup .cross {
+    position: absolute;
+    top: -10px;
+    right: 0px;
+}
+
+
+/* Forget Password */
+.forgetHeading {
+    font-family: Lato;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 57px;
+    color: #101010;
+    width: 331px;
+}
+
+.forgetSubHeading {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 13px;
+    color: #707070;
+}
+
+.formInputFPass {
+    margin-top: 53px;
+}
+
+.formSubmitFPass {
+    margin-top: 12px;
+}
+
+.switchTagFPass {
+    margin-top: 93px;
+}
+
+
+.forgetHSetNew {
+    margin-top: 21px;
+}
+
+.form label {
+    display: flex;
+    text-align: left !important;
+    margin-bottom: 5px;
+}
+
+.form label:first-child {
+    margin-top: 50px;
+}
+
+.formLabelSetnew {
+    margin-top: 16px;
+}
+
+.formSubmitBtnSetNew {
+    margin: 20px 0px 50px 0px;
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.error p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: #EC6C21;
+}
+
+/* DashBoard CSS Start */
+
+header {
+    max-width: 1411px;
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    height: 61px;
+    box-shadow: 2px 2px 64px 0px #0000001A;
+}
+
+.headerContainer .headerLogo {
+    margin: 8px 0px;
+    margin-right: 50px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 43px;
+}
+
+.nav ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5vw;
+}
+
+.nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #0D4D8A;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.nav ul li.active {
+    border-bottom: 1px solid #0D4D8A;
+    border-bottom-width: 2px;
+    padding: 0 0.5vw;
+    height: 61px;
+}
+
+.raiseticket {
+    margin-left: auto;
+}
+
+.raiseticketbtn {
+    width: 121px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #EC6C21;
+    background-color: transparent;
+    color: #EC6C21;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.notification {
+    position: relative;
+}
+
+.notification::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: -3px;
+    right: -2px;
+    border-radius: 50%;
+    background: #EC6C21;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    color: #3E3E3E;
+}
+
+.shortForm {
+    display: grid;
+    place-content: center;
+    margin-left: 12px;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #EC6C21;
+    opacity: 20%;
+}
+
+.welcomeScreen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0em;
+    margin-top: 19px;
+}
+
+.subHeading {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: #7D7D7D;
+    margin-top: 12px;
+}
+
+.raisebtnwel {
+    margin-top: 34px;
+    margin-right: 0px;
+}
+
+/* DashBoard CSS End */
+
+
+/* Pending CSS Start */
+
+.pendingTicket {
+    max-width: 1256px;
+    margin: 0px auto;
+    padding-top: 61px;
+}
+
+.statusBtnContainer {
+    background: #DBDBDB;
+    width: 180px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    margin-top: 23px;
+    gap: 15px;
+}
+
+.statusBtn {
+    width: 83px;
+    height: 28px;
+    border-radius: 6px;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin: 4px;
+    border: none;
+    cursor: pointer;
+    color: #515151;
+}
+
+.statusBtn.active {
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.ticketInfoContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 23px;
+    gap: 24px;
+}
+
+.ticketInfoCard {
+    width: 296px;
+    height: 155px;
+    border-radius: 8px;
+    border-style: dotted;
+    border-color: #DBDBDB;
+}
+
+.newIssue {
+    display: flex;
+    margin: 24px 0px 0px 20px;
+}
+
+.dottedLine {
+    display: grid;
+    place-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    border-style: dotted;
+    border-color: #DBDBDB;
+    margin-right: 13px;
+}
+
+.raisebtnissue {
+    margin-top: 41px;
+    margin-left: 20px;
+}
+
+.priorityCards {
+    display: flex;
+    flex-direction: column;
+    margin: 17px 0px 0px 17px;
+}
+
+.tagCapsuel {
+    display: flex;
+    align-items: center;
+    background: #EC6C2133;
+    color: #EC6C21;
+    width: max-content;
+    height: 23.8px;
+    padding: 2px 10px 2px 6px;
+    border-radius: 14px;
+}
+
+.tagCapsuel.Blue {
+    background: #0B4D8933;
+    color: #0C4D89;
+}
+
+.tagCapsuel p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+
+.tagCapsuel img {
+    margin-right: 4px;
+}
+
+.ticketName {
+    display: flex;
+    align-items: center;
+    margin-top: 12.2px;
+}
+
+.ticketName p {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 0em;
+}
+
+.ticketDate {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    margin-top: 9px;
+}
+
+.ticketDate span {
+    font-weight: 400;
+    color: #848484;
+}
+
+.capsuelYear {
+    margin-left: 11px;
+    background: #CACACA;
+    width: 45px;
+    height: 27px;
+    padding: 6px 8px 6px 8px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.statusCapsuel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin-top: 4px;
+    width: 78px;
+    height: 28px;
+    padding: 5px 9px 5px 6px;
+    border-radius: 24px;
+    background-color: #7D7D7D;
+    color: white;
+    margin-top: 10px;
+}
+
+.statusCapsuel p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+
+.statusCapsuel.resloved {
+    background: #04DB00;
+}
+
+/* Pending CSS End */
+
+/* Mobile Screen to Tablet Screen */
+@media only screen and (max-width:767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .leftImg {
+        display: none;
+    }
+
+    .formContainer {
+        height: auto;
+        width: 100%;
+        padding: 20px;
+        margin: 0px auto;
+    }
+
+    .line {
+        width: 100%;
+    }
+
+    .ErroContainer {
+        width: 90%;
+        top: 20px;
+    }
+
+    .errorpopup .cross {
+        top: -11px;
+        right: -8px;
+    }
+}
