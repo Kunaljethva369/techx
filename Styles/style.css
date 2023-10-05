@@ -784,7 +784,7 @@ input[name='priority'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url("/Assets/downArrow.png");
+    background-image: url("./Assets/downArrow.png");
     background-repeat: no-repeat;
     background-position-x: 92%;
     background-position-y: 14px;
