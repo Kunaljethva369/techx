@@ -509,7 +509,7 @@ header {
     border-color: #DBDBDB;
 }
 
-.ticketInfoCard.dotted{
+.ticketInfoCard.dotted {
     width: 296px;
     height: 155px;
     border-radius: 8px;
@@ -656,7 +656,7 @@ header {
 
 .chartSection {
     width: 70%;
-    margin-top: 33px;
+    margin-top: 30px;
     margin-left: 25px;
 }
 
@@ -819,11 +819,25 @@ input[name='priority'] {
 
 .middleSection {
     margin-top: 32px;
+    display: flex;
 }
 
 .ticketTrend {
     width: 60%;
+    display: flex;
+    flex-direction: column;
 }
+
+.ticketTrend .innerText {
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+}
+
+.ticketTrend .innerText img{
+    cursor: pointer;
+}
+
 
 .updatesandopen {
     width: 40%;
@@ -842,7 +856,7 @@ input[name='priority'] {
 }
 
 .ticketTrend img {
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .raisedTicketBelow {
@@ -853,6 +867,63 @@ input[name='priority'] {
     margin-top: 20px;
 }
 
+.updatesandopen .raisedTicketBelow {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.updatesandopen .ticketInfoCard {
+    width: 377px;
+    height: 65px;
+    margin-left: 20px;
+    margin-top: 13px;
+    display: flex;
+}
+
+.updatesandopen .ticketInfoCard .tagCapsuel {
+    margin-left: auto;
+    margin-right: 16px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.updatesandopen .priorityCards {
+    margin: 0px;
+}
+
+.updatesandopen .ticketName {
+    margin: 6px 0px 0px 17px;
+}
+
+.updatesandopen .ticketDate {
+    margin: 3px 0px 0px 17px
+}
+
+.updatesandopen .ticketInfoCard .priorityCards p {
+    font-size: 16px;
+}
+
+.updatesandopen .viewAll {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 6px;
+    margin-right: 1.5rem;
+}
+
+.updatesandopen .viewAll a {
+    text-decoration: none;
+    color: #EC6C21;
+    margin-right: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.updatesandopen .viewAll img {
+    height: 16px;
+}
 
 /* Middle Section End */
 

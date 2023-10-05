@@ -12,9 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     </link>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.4/build/player/lottie.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
-
 </head>
 
 <body>
@@ -44,9 +42,15 @@
     </header>
     <main>
         <section class="welcomeScreen">
-            <img src="/Assets/animation_lncsnj9t_small.gif">
-            <!-- <lottie-player src="/Assets/animation_lncs9dwe.json" speed="1" style="width:300px; height:300px;" loop autoplays></lottie-player> -->
-            <!-- <embed src="/Assets/animation_lncs9dwe.json" type="application/json" width="300" height="300"> -->
+            <div id="welguy" style="width: 259px; height: 259px"></div>
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('welguy'),
+                    path: '/Assets/animation_lncs9dwe.json',
+                    loop: true,
+                    autoplay: true
+                })
+            </script>
             <h2 class="heading">Welcome Harsh!</h2>
             <h5 class="subHeading">Create new ticket quickly!</h5>
             <button class="raiseticketbtn raisebtnwel">Rasie a Ticket</button>

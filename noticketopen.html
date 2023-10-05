@@ -12,6 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
     </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,15 @@
     </header>
     <main>
         <section class="welcomeScreen">
-            <img src="/Assets/welcomeGuy.png">
+            <div id="welguy" style="width: 259px; height: 259px"></div>
+            <script>
+                var animation = bodymovin.loadAnimation({
+                    container: document.getElementById('welguy'),
+                    path: '/Assets/animation_lncs9dwe.json',
+                    loop: true,
+                    autoplay: true
+                })
+            </script>
             <h2 class="heading">No Open Tickets</h2>
             <h5 class="subHeading">Create new one quickly!</h5>
             <button class="raiseticketbtn raisebtnwel">Rasie a Ticket</button>
