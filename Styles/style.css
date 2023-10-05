@@ -139,7 +139,7 @@ svg {
     margin: 22px auto;
 }
 
-.form input {
+.formInput {
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -505,6 +505,14 @@ header {
     width: 296px;
     height: 155px;
     border-radius: 8px;
+    border-style: solid;
+    border-color: #DBDBDB;
+}
+
+.ticketInfoCard.dotted{
+    width: 296px;
+    height: 155px;
+    border-radius: 8px;
     border-style: dotted;
     border-color: #DBDBDB;
 }
@@ -628,6 +636,227 @@ header {
 }
 
 /* Pending CSS End */
+
+/* dashBoard CSS Start */
+
+.dashBoardContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 61px;
+}
+
+/* Upper Section Start */
+
+.ticketUpper,
+.upperSection {
+    display: flex;
+    align-items: center;
+}
+
+.chartSection {
+    width: 70%;
+    margin-top: 33px;
+    margin-left: 25px;
+}
+
+.ticketsCounter {
+    display: flex;
+    gap: 63px;
+}
+
+
+.ticketItems span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #707070;
+    margin-top: 7px;
+    margin-left: 1.8rem;
+}
+
+.disturbedTickets span {
+    margin-left: 0px;
+    padding-top: 6px;
+}
+
+.ticketUpper p {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+    margin-left: 7px;
+}
+
+.disturbedTickets {
+    margin: 0px 35px 0px auto;
+}
+
+.disturbedTickets .innerTickets {
+    display: flex;
+    width: 270px;
+    height: 24px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+}
+
+.disturbedTickets .innerTickets>div {
+    padding-left: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.disturbedTickets .innerTickets .orange {
+    border-radius: 4px 0px 0px 4px;
+    width: 160px;
+    background: #EC6C2180;
+}
+
+.disturbedTickets .innerTickets .voilet {
+    width: 52px;
+    background: #39376880;
+}
+
+.disturbedTickets .innerTickets .blue {
+    border-radius: 0px 4px 4px 0px;
+    width: 58px;
+    background: #A8CFEF80;
+}
+
+.ticketsTagLine {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #7C7C7C;
+    margin-top: 6px;
+}
+
+.raiseticketSection {
+    width: 30%;
+    background: #F8F8F8;
+    padding: 35px 0px 0px 35px;
+}
+
+.heading-sm {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.raiseticketSection .subHeading {
+    margin-top: 5px;
+}
+
+.raiseTicketForm {
+    max-width: 335px;
+    margin-top: 35px;
+}
+
+.raiseTicketForm .formInput {
+    margin-top: 11px;
+}
+
+.formLabel {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #787878;
+}
+
+.formLabelInput {
+    margin-top: 11px;
+}
+
+.priorityRadio {
+    display: flex;
+}
+
+.radioBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.priorityRadio label {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+input[name='priority'] {
+    cursor: pointer;
+    accent-color: #EC6C21;
+    width: 25px;
+    height: 25px;
+}
+
+.formLabel.priority {
+    margin-top: 26px;
+}
+
+.raiseTicketForm .formLabelInput select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("/Assets/downArrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 92%;
+    background-position-y: 14px;
+    border-radius: 2px;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+}
+
+/* Upper Section End */
+
+/* Middle Section Start */
+
+.middleSection {
+    margin-top: 32px;
+}
+
+.ticketTrend {
+    width: 60%;
+}
+
+.updatesandopen {
+    width: 40%;
+}
+
+.ticketTrend h5 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+}
+
+.ticketTrend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticketTrend img {
+    margin-bottom: 16px;
+}
+
+.raisedTicketBelow {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    margin-top: 20px;
+}
+
+
+/* Middle Section End */
+
+/* dashBoard CSS End */
 
 /* Mobile Screen to Tablet Screen */
 @media only screen and (max-width:767px) {

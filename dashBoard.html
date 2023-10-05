@@ -39,6 +39,162 @@
             </div>
         </div>
     </header>
+    <main>
+        <section class="dashBoardContainer">
+            <div class="chartSection">
+                <div class="upperSection">
+                    <div class="ticketsCounter">
+                        <div class="ticketItems">
+                            <div class="ticketUpper">
+                                <img src="/Assets/notes.png">
+                                <p>345</p>
+                            </div>
+                            <span>Total Tickets</span>
+                        </div>
+                        <div class="ticketItems">
+                            <div class="ticketUpper">
+                                <img src="/Assets/enegry.png">
+                                <p>98</p>
+                            </div>
+                            <span>Open Tickets</span>
+                        </div>
+                        <div class="ticketItems">
+                            <div class="ticketUpper">
+                                <img src="/Assets/roundtick.png">
+                                <p>233</p>
+                            </div>
+                            <span>Closed Tickets</span>
+                        </div>
+                        <div class="ticketItems">
+                            <div class="ticketUpper">
+                                <img src="/Assets/excalmation.png">
+                                <p>14</p>
+                            </div>
+                            <span>Pending Tickets</span>
+                        </div>
+                    </div>
+                    <div class="disturbedTickets">
+                        <div class="innerTickets"> 
+                            <div class="orange">65%</div>
+                            <div class="voilet">15%</div>
+                            <div class="blue">20%</div>
+                        </div>
+                        <div class="ticketsTagLine">Distribution of Tickets</div>
+                    </div>
+                </div>
+                <div class="middleSection">
+                    <div class="ticketTrend">
+                        <h5>Ticket Trend</h5>
+                        <img src="/Assets/dots-vertical.png">
+                    </div>
+                    <img src="/Assets/Chartmodule.png">
+                    <div class="raisedTicketBelow">Resolved Tickets</div>
+                    <div class="updatesandopen">
+
+                    </div>
+                    <div class="lowerSection">
+                        <div class="ticketInfoContainer" style="margin-top: 16px;">
+                            <div class="ticketInfoCard">
+                                <div class="priorityCards">
+                                    <div class="tagCapsuel Orange">
+                                        <img src="/Assets/organetag.png">
+                                        <p>High Priority</p>
+                                    </div>
+                                    <div class="ticketName">
+                                        <p>Cisco N-512# XZ</p>
+                                        <span class="capsuelYear">2021</span>
+                                    </div>
+                                    <div class="ticketDate">
+                                        <span>Raised on</span>
+                                        18 Jul’23
+                                    </div>
+                                    <div class="statusCapsuel resloved">
+                                        <img src="/Assets/tick.png">
+                                        <p>Resloved</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticketInfoCard">
+                                <div class="priorityCards">
+                                    <div class="tagCapsuel Blue">
+                                        <img src="/Assets/blueTag.png">
+                                        <p>Medium Priority</p>
+                                    </div>
+                                    <div class="ticketName">
+                                        <p>Cisco N-512# XZ</p>
+                                        <span class="capsuelYear">2021</span>
+                                    </div>
+                                    <div class="ticketDate">
+                                        <span>Raised on</span>
+                                        18 Jul’23
+                                    </div>
+                                    <div class="statusCapsuel resloved">
+                                        <img src="/Assets/tick.png">
+                                        <p>Resloved</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ticketInfoCard">
+                                <div class="priorityCards">
+                                    <div class="tagCapsuel Blue">
+                                        <img src="/Assets/blueTag.png">
+                                        <p>Medium Priority</p>
+                                    </div>
+                                    <div class="ticketName">
+                                        <p>Cisco N-512# XZ</p>
+                                        <span class="capsuelYear">2021</span>
+                                    </div>
+                                    <div class="ticketDate">
+                                        <span>Raised on</span>
+                                        18 Jul’23
+                                    </div>
+                                    <div class="statusCapsuel resloved">
+                                        <img src="/Assets/tick.png">
+                                        <p>Resloved</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="raiseticketSection">
+                <h2 class="heading-sm">Raise a Ticket</h2>
+                <h5 class="subHeading">Create new ticket quickly!</h5>
+                <form class="raiseTicketForm">
+                    <div class="formLabelInput">
+                        <label class="formLabel">Subject</label>
+                        <input type="text" class="formInput">
+                    </div>
+                    <div class="formLabelInput">
+                        <label class="formLabel">Device</label>
+                        <select class="formInput">
+                            <option value=""></option>
+                            <option value="iphone">Iphone</option>
+                            <option value="realme">Realme</option>
+                            <option value="samsung">Samsung</option>
+                        </select>
+                    </div>
+                    <div class="formLabel priority">Priority</div>
+                    <div class="priorityRadio">
+                        <div class="radioBtn">
+                            <input type="radio" id="html" name="priority" value="high" checked>
+                            <label for="html">High</label><br>
+                        </div>
+                        <div class="radioBtn">
+                            <input type="radio" id="css" name="priority" value="medium">
+                            <label for="css">Medium</label><br>
+                        </div>
+                        <div class="radioBtn">
+                            <input type="radio" id="javascript" name="priority" value="low">
+                            <label for="javascript">Low</label>
+                        </div>
+                    </div>
+                    <button class="formSubmitBtn">Continue</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
