@@ -1,25 +1,21 @@
 /* CSS Reset Start */
-/* Box sizing rules */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
-/* Remove default margin */
 * {
     margin: 0px;
     padding: 0px;
     font: inherit;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
     list-style: none;
 }
 
-/* Set core root defaults */
 html:focus-within {
     scroll-behavior: smooth;
 }
@@ -29,19 +25,16 @@ body {
     height: 100%;
 }
 
-/* Set core body defaults */
 body {
     font-family: 'Lato';
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture,
 svg {
@@ -49,7 +42,6 @@ svg {
     display: block;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
     html:focus-within {
         scroll-behavior: auto;
@@ -67,7 +59,6 @@ svg {
 
 /* CSS Reset END */
 
-
 .dnone {
     display: none;
 }
@@ -81,7 +72,6 @@ svg {
     gap: 110px;
     padding: 0px 20px;
 }
-
 
 .formContainer {
     box-shadow: 2px 2px 64px 0px #0000001A;
@@ -126,7 +116,6 @@ svg {
     align-items: center;
     gap: 12px;
 }
-
 
 .googleSign span {
     font-weight: 500;
@@ -249,7 +238,6 @@ svg {
     right: 0px;
 }
 
-
 /* Forget Password */
 .forgetHeading {
     font-family: Lato;
@@ -285,7 +273,6 @@ svg {
 .switchTagFPass {
     margin-top: 93px;
 }
-
 
 .forgetHSetNew {
     margin-top: 21px;
@@ -325,7 +312,6 @@ svg {
 }
 
 /* DashBoard CSS Start */
-
 header {
     max-width: 1411px;
 }
@@ -337,6 +323,8 @@ header {
     align-items: center;
     height: 61px;
     box-shadow: 2px 2px 64px 0px #0000001A;
+    background-color: white;
+    z-index: 1;
 }
 
 .headerContainer .headerLogo {
@@ -366,7 +354,6 @@ header {
     text-decoration: none;
     position: relative;
 }
-
 
 .nav ul li.active {
     border-bottom: 1px solid #0D4D8A;
@@ -419,8 +406,8 @@ header {
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    background: #EC6C21;
-    opacity: 20%;
+    background: rgba(236, 108, 33, 0.2);
+    color: #EC6C21;
 }
 
 .welcomeScreen {
@@ -452,12 +439,9 @@ header {
     margin-top: 34px;
     margin-right: 0px;
 }
-
 /* DashBoard CSS End */
 
-
 /* Pending CSS Start */
-
 .pendingTicket {
     max-width: 1256px;
     margin: 0px auto;
@@ -638,7 +622,6 @@ header {
 /* Pending CSS End */
 
 /* dashBoard CSS Start */
-
 .dashBoardContainer {
     display: flex;
     width: 100%;
@@ -647,7 +630,6 @@ header {
 }
 
 /* Upper Section Start */
-
 .ticketUpper,
 .upperSection {
     display: flex;
@@ -664,7 +646,6 @@ header {
     display: flex;
     gap: 63px;
 }
-
 
 .ticketItems span {
     font-size: 14px;
@@ -697,16 +678,16 @@ header {
     display: flex;
     width: 270px;
     height: 24px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 0em;
 }
 
 .disturbedTickets .innerTickets>div {
     padding-left: 7px;
     display: flex;
     align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
 }
 
 .disturbedTickets .innerTickets .orange {
@@ -738,7 +719,7 @@ header {
 .raiseticketSection {
     width: 30%;
     background: #F8F8F8;
-    padding: 35px 0px 0px 35px;
+    padding: 30px 0px 0px 35px;
 }
 
 .heading-sm {
@@ -816,7 +797,6 @@ input[name='priority'] {
 /* Upper Section End */
 
 /* Middle Section Start */
-
 .middleSection {
     margin-top: 32px;
     display: flex;
@@ -834,10 +814,10 @@ input[name='priority'] {
     align-items: unset;
 }
 
-.ticketTrend .innerText img{
+.ticketTrend .innerText img {
     cursor: pointer;
+    margin-right: 50px;
 }
-
 
 .updatesandopen {
     width: 40%;
