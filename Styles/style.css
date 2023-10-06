@@ -99,6 +99,7 @@ svg {
 
 .signUpSocial {
     display: flex;
+    justify-content: center;
 }
 
 .googleSign {
@@ -248,7 +249,7 @@ svg {
     text-align: center;
     margin-top: 57px;
     color: #101010;
-    width: 331px;
+    max-width: 331px;
 }
 
 .forgetSubHeading {
@@ -924,6 +925,7 @@ input[name='priority'] {
         width: 100%;
         padding: 20px;
         margin: 0px auto;
+        z-index: 1;
     }
 
     .line {
