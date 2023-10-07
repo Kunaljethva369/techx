@@ -1106,7 +1106,22 @@ input[name='priority'] {
 
 /* Pending ticket and resloved ticket responsive */
 
-@media only screen and (min-width:480px) and (max-width:767px) {
+@media only screen and (min-width:640px) and (max-width:768px) {
+    .pending-ticket{
+        padding: 61px 10px 10px 10px;
+    }
+
+    .ticket-info-container{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        place-items: center;
+    }
+    .ticket-info-card, .ticket-info-card.dotted{
+        width: 220px;
+    }
+}
+
+@media only screen and (min-width:480px) and (max-width:640px) {
     .pending-ticket{
         padding: 61px 10px 10px 10px;
     }
