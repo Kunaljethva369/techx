@@ -1106,7 +1106,21 @@ input[name='priority'] {
 
 /* Pending ticket and resloved ticket responsive */
 
-@media only screen and (min-width:640px) and (max-width:768px) {
+@media only screen and (min-width:1024px) and (max-width:1367px) {
+    .pending-ticket{
+        padding: 61px 10px 10px 10px;
+    }
+
+    .ticket-info-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+    }
+    .ticket-info-card, .ticket-info-card.dotted{
+        width: 235px;
+    }
+}
+
+@media only screen and (min-width:736px) and (max-width:1024px) {
     .pending-ticket{
         padding: 61px 10px 10px 10px;
     }
@@ -1114,14 +1128,13 @@ input[name='priority'] {
     .ticket-info-container{
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
-        place-items: center;
     }
     .ticket-info-card, .ticket-info-card.dotted{
-        width: 220px;
+        width: 225px;
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:640px) {
+@media only screen and (min-width:480px) and (max-width:736px) {
     .pending-ticket{
         padding: 61px 10px 10px 10px;
     }
