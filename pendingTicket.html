@@ -16,8 +16,8 @@
 
 <body>
     <header>
-        <div class="headerContainer">
-            <img class="headerLogo" src="./Assets/techxpert-logo 1.png">
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
             <nav class="nav">
                 <ul>
                     <li class="active"><a href="#">Dashboard</a></li>
@@ -25,93 +25,121 @@
                     <li><a href="#">Reports</a></li>
                 </ul>
             </nav>
-            <div class="raiseticket">
-                <button class="raiseticketbtn">Rasie a Ticket</button>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
             </div>
             <div class="notification">
                 <img src="./Assets/notification.png">
             </div>
             <div class="profile">
                 <h4>Harsh Mehta</h4>
-                <div class="shortForm">
+                <div class="short-form">
                     <span>HM</span>
                 </div>
             </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="pendingTicket">
+        <section class="pending-ticket">
             <h2 class="heading">My Tickets</h2>
-            <h5 class="subHeading">Manage your tickets or create new one quickly!</h5>
-            <div class="statusBtnContainer">
-                <button class="statusBtn active">Pending</button>
-                <button class="statusBtn">Resloved</button>
+            <h5 class="sub-heading">Manage your tickets or create new one quickly!</h5>
+            <div class="status-btn-container">
+                <button class="status-btn active">Pending</button>
+                <button class="status-btn">Resloved</button>
             </div>
-            <div class="ticketInfoContainer">
-                <div class="ticketInfoCard dotted">
+            <div class="ticket-info-container">
+                <div class="ticket-info-card dotted">
                     <div class="newIssue">
                         <div class="dottedLine">
                             <img src="./Assets/addsign.png">
                         </div>
                         <p>New Issue</p>
                     </div>
-                    <button class="raiseticketbtn raisebtnissue">Rasie a Ticket</button>
+                    <button class="raise-ticket-btn raise-btn-issue">Rasie a Ticket</button>
                 </div>
-                <div class="ticketInfoCard">
-                    <div class="priorityCards">
-                        <div class="tagCapsuel Orange">
+                <div class="ticket-info-card">
+                    <div class="priority-cards">
+                        <div class="tag-capsuel Orange">
                             <img src="./Assets/organetag.png">
                             <p>High Priority</p>
                         </div>
-                        <div class="ticketName">
+                        <div class="ticket-name">
                             <p>Cisco N-512# XZ</p>
-                            <span class="capsuelYear">2021</span>
+                            <span class="capsuel-year">2021</span>
                         </div>
-                        <div class="ticketDate">
+                        <div class="ticket-date">
                             <span>Raised on</span>
                             18 Jul’23
                         </div>
-                        <div class="statusCapsuel">
+                        <div class="status-capsuel">
                             <img src="./Assets/clocks.png">
                             <p>Pending</p>
                         </div>
                     </div>
                 </div>
-                <div class="ticketInfoCard">
-                    <div class="priorityCards">
-                        <div class="tagCapsuel Blue">
+                <div class="ticket-info-card">
+                    <div class="priority-cards">
+                        <div class="tag-capsuel Blue">
                             <img src="./Assets/blueTag.png">
                             <p>Medium Priority</p>
                         </div>
-                        <div class="ticketName">
+                        <div class="ticket-name">
                             <p>Cisco N-512# XZ</p>
-                            <span class="capsuelYear">2021</span>
+                            <span class="capsuel-year">2021</span>
                         </div>
-                        <div class="ticketDate">
+                        <div class="ticket-date">
                             <span>Raised on</span>
                             18 Jul’23
                         </div>
-                        <div class="statusCapsuel">
+                        <div class="status-capsuel">
                             <img src="./Assets/clocks.png">
                             <p>Pending</p>
                         </div>
                     </div>
                 </div>
-                <div class="ticketInfoCard">
-                    <div class="priorityCards">
-                        <div class="tagCapsuel">
+                <div class="ticket-info-card">
+                    <div class="priority-cards">
+                        <div class="tag-capsuel">
                             <img src="./Assets/organetag.png">
                             <p>High Priority</p>
                         </div>
-                        <div class="ticketName">
+                        <div class="ticket-name">
                             <p>Cisco N-512# XZ</p>
-                            <span class="capsuelYear">2021</span>
+                            <span class="capsuel-year">2021</span>
                         </div>
-                        <div class="ticketDate">
+                        <div class="ticket-date">
                             <span>Raised on</span>
                             18 Jul’23
                         </div>
-                        <div class="statusCapsuel">
+                        <div class="status-capsuel">
                             <img src="./Assets/clocks.png">
                             <p>Pending</p>
                         </div>
@@ -120,6 +148,7 @@
             </div>
         </section>
     </main>
+    <script src="./JS/index.js"></script>
 </body>
 
 </html>

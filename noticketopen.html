@@ -17,8 +17,8 @@
 
 <body>
     <header>
-        <div class="headerContainer">
-            <img class="headerLogo" src="./Assets/techxpert-logo 1.png">
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
             <nav class="nav">
                 <ul>
                     <li><a href="/welcomeDashBoard.html">Dashboard</a></li>
@@ -26,36 +26,65 @@
                     <li><a href="#">Reports</a></li>
                 </ul>
             </nav>
-            <div class="raiseticket">
-                <button class="raiseticketbtn">Rasie a Ticket</button>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
             </div>
             <div class="notification">
                 <img src="./Assets/notification.png">
             </div>
             <div class="profile">
                 <h4>Harsh Mehta</h4>
-                <div class="shortForm">
+                <div class="short-form">
                     <span>HM</span>
                 </div>
             </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="welcomeScreen">
-            <div id="welguy" style="width: 259px; height: 259px"></div>
+        <section class="welcome-screen">
+            <div id="wel-guy" style="width: 259px; height: 259px"></div>
             <script>
                 var animation = bodymovin.loadAnimation({
-                    container: document.getElementById('welguy'),
+                    container: document.getElementById('wel-guy'),
                     path: './Assets/animation_lncs9dwe.json',
                     loop: true,
                     autoplay: true
                 })
             </script>
             <h2 class="heading">No Open Tickets</h2>
-            <h5 class="subHeading">Create new one quickly!</h5>
-            <button class="raiseticketbtn raisebtnwel">Rasie a Ticket</button>
+            <h5 class="sub-heading">Create new one quickly!</h5>
+            <button class="raise-ticket-btn raise-btn-wel">Rasie a Ticket</button>
         </section>
     </main>
+    <script src="./JS/index.js"></script>
 </body>
 
 </html>

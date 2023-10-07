@@ -59,7 +59,7 @@ svg {
 
 /* CSS Reset END */
 
-.dnone {
+.d-none {
     display: none;
 }
 
@@ -73,7 +73,7 @@ svg {
     padding: 0px 20px;
 }
 
-.formContainer {
+.form-container {
     box-shadow: 2px 2px 64px 0px #0000001A;
     background-color: white;
     /* height: 560px; */
@@ -83,11 +83,11 @@ svg {
     text-align: center;
 }
 
-.logoImg {
+.logo-img {
     margin: 36px auto auto;
 }
 
-.tagLine {
+.tag-line {
     color: #343434;
     font-size: 14px;
     font-weight: 300;
@@ -97,12 +97,12 @@ svg {
     margin-top: 5px;
 }
 
-.signUpSocial {
+.sign-up-social {
     display: flex;
     justify-content: center;
 }
 
-.googleSign {
+.social-btn {
     cursor: pointer;
     /* margin: 38px auto auto; */
     margin: 38px 24px 0px 24px;
@@ -118,7 +118,7 @@ svg {
     gap: 12px;
 }
 
-.googleSign span {
+.social-btn span {
     font-weight: 500;
 }
 
@@ -129,7 +129,7 @@ svg {
     margin: 22px auto;
 }
 
-.formInput {
+.form-input {
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -139,22 +139,22 @@ svg {
     outline: none;
 }
 
-.form .formInputMT {
+.form .form-input-mt {
     margin-top: 15px;
 }
 
-.form .passwordEye {
+.form .password-eye {
     position: relative;
 }
 
-.form .passwordEye img {
+.form .password-eye img {
     position: absolute;
     top: 46%;
     right: 14px;
     cursor: pointer;
 }
 
-.formSubmitBtn {
+.form-submit-btn {
     width: 100%;
     height: 50px;
     background-color: #EC6C21;
@@ -167,7 +167,7 @@ svg {
     margin-top: 22px;
 }
 
-.formSubmitLight {
+.form-submit-light {
     opacity: 50%;
 }
 
@@ -185,7 +185,7 @@ svg {
     color: #8A8A8A;
 }
 
-.switchTag {
+.switch-tag {
     margin-top: 44px;
     color: #707070;
     font-size: 16px;
@@ -194,7 +194,7 @@ svg {
     margin-bottom: 24px;
 }
 
-.switchTag a {
+.switch-tag a {
     color: #EC6C21;
     font-weight: 600;
     letter-spacing: 0em;
@@ -202,16 +202,16 @@ svg {
 }
 
 /* Error Pop Up */
-.ErroContainer {
+.error-container {
     position: fixed;
     bottom: 46px;
     max-width: 1362px;
     left: 47%;
     transform: translate(-47%);
-    font-family: lato;
+    z-index: 1;
 }
 
-.errorpopup {
+.error-popup {
     background-color: #101010;
     display: flex;
     align-items: center;
@@ -220,11 +220,11 @@ svg {
     position: relative;
 }
 
-.errorpopup img {
+.error-popup img {
     padding: 22px 19px 22px 17px;
 }
 
-.errorpopup p {
+.error-popup p {
     font-size: 16px;
     font-weight: 300;
     line-height: 23px;
@@ -233,14 +233,14 @@ svg {
     max-width: 70%;
 }
 
-.errorpopup .cross {
+.error-popup .cross {
     position: absolute;
     top: -10px;
     right: 0px;
 }
 
 /* Forget Password */
-.forgetHeading {
+.forget-heading {
     font-family: Lato;
     font-size: 32px;
     font-weight: 700;
@@ -252,7 +252,7 @@ svg {
     max-width: 331px;
 }
 
-.forgetSubHeading {
+.forget-sub-heading {
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
@@ -263,20 +263,21 @@ svg {
     color: #707070;
 }
 
-.formInputFPass {
+.form-input-fpass {
     margin-top: 53px;
 }
 
-.formSubmitFPass {
+.form-submitf-pass {
     margin-top: 12px;
 }
 
-.switchTagFPass {
+.switch-tag-fpass {
     margin-top: 93px;
 }
 
-.forgetHSetNew {
+.forget-hset-new {
     margin-top: 21px;
+    margin: 21px auto 0px auto;
 }
 
 .form label {
@@ -289,11 +290,11 @@ svg {
     margin-top: 50px;
 }
 
-.formLabelSetnew {
+.form-label-set-new {
     margin-top: 16px;
 }
 
-.formSubmitBtnSetNew {
+.form-submitbtn-set-new {
     margin: 20px 0px 50px 0px;
 }
 
@@ -317,7 +318,7 @@ header {
     max-width: 1411px;
 }
 
-.headerContainer {
+.header-container {
     width: 100%;
     display: flex;
     position: fixed;
@@ -328,8 +329,10 @@ header {
     z-index: 1;
 }
 
-.headerContainer .headerLogo {
-    margin: 8px 50px 0px 16px;
+.header-container .header-logo {
+    margin: 8px 50px 6px 16px;
+    height: 46px;
+    width: 179px;
 }
 
 .nav ul {
@@ -337,14 +340,16 @@ header {
     gap: 43px;
 }
 
-.nav ul li {
+.nav ul li,
+.nav-mob {
     list-style: none;
     display: flex;
     align-items: center;
     padding: 0 0.5vw;
 }
 
-.nav ul li a {
+.nav ul li a,
+.nav-mob ul li a {
     font-size: 16px;
     font-weight: 600;
     line-height: 19px;
@@ -362,11 +367,11 @@ header {
     height: 61px;
 }
 
-.raiseticket {
+.raise-ticket {
     margin-left: auto;
 }
 
-.raiseticketbtn {
+.raise-ticket-btn {
     width: 121px;
     height: 36px;
     border-radius: 4px;
@@ -382,7 +387,8 @@ header {
     margin-right: 18px;
 }
 
-.notification::before {
+.notification::before,
+.notification-mob::before {
     content: "";
     width: 6px;
     height: 6px;
@@ -400,7 +406,7 @@ header {
     color: #3E3E3E;
 }
 
-.shortForm {
+.short-form {
     display: grid;
     place-content: center;
     margin-left: 12px;
@@ -411,7 +417,7 @@ header {
     color: #EC6C21;
 }
 
-.welcomeScreen {
+.welcome-screen {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -425,9 +431,10 @@ header {
     line-height: 48px;
     letter-spacing: 0em;
     margin-top: 19px;
+    text-align: center;
 }
 
-.subHeading {
+.sub-heading {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -436,20 +443,21 @@ header {
     margin-top: 12px;
 }
 
-.raisebtnwel {
+.raise-btn-wel {
     margin-top: 34px;
     margin-right: 0px;
 }
+
 /* DashBoard CSS End */
 
 /* Pending CSS Start */
-.pendingTicket {
+.pending-ticket {
     max-width: 1300px;
     margin: 0px auto;
     padding-top: 61px;
 }
 
-.statusBtnContainer {
+.status-btn-container {
     background: #DBDBDB;
     width: 180px;
     height: 36px;
@@ -459,7 +467,7 @@ header {
     gap: 15px;
 }
 
-.statusBtn {
+.status-btn {
     width: 83px;
     height: 28px;
     border-radius: 6px;
@@ -474,19 +482,19 @@ header {
     color: #515151;
 }
 
-.statusBtn.active {
+.status-btn.active {
     background-color: #FFFFFF;
     color: black;
 }
 
-.ticketInfoContainer {
+.ticket-info-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-top: 23px;
     gap: 24px;
 }
 
-.ticketInfoCard {
+.ticket-info-card {
     width: 296px;
     height: 155px;
     border-radius: 8px;
@@ -494,7 +502,7 @@ header {
     border-color: #DBDBDB;
 }
 
-.ticketInfoCard.dotted {
+.ticket-info-card.dotted {
     width: 296px;
     height: 155px;
     border-radius: 8px;
@@ -518,18 +526,18 @@ header {
     margin-right: 13px;
 }
 
-.raisebtnissue {
+.raise-btn-issue {
     margin-top: 41px;
     margin-left: 20px;
 }
 
-.priorityCards {
+.priority-cards {
     display: flex;
     flex-direction: column;
     margin: 17px 0px 0px 17px;
 }
 
-.tagCapsuel {
+.tag-capsuel {
     display: flex;
     align-items: center;
     background: #EC6C2133;
@@ -540,36 +548,36 @@ header {
     border-radius: 14px;
 }
 
-.tagCapsuel.Blue {
+.tag-capsuel.Blue {
     background: #0B4D8933;
     color: #0C4D89;
 }
 
-.tagCapsuel p {
+.tag-capsuel p {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
 }
 
-.tagCapsuel img {
+.tag-capsuel img {
     margin-right: 4px;
 }
 
-.ticketName {
+.ticket-name {
     display: flex;
     align-items: center;
     margin-top: 12.2px;
 }
 
-.ticketName p {
+.ticket-name p {
     font-size: 18px;
     font-weight: 900;
     line-height: 22px;
     letter-spacing: 0em;
 }
 
-.ticketDate {
+.ticket-date {
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
@@ -577,12 +585,12 @@ header {
     margin-top: 9px;
 }
 
-.ticketDate span {
+.ticket-date span {
     font-weight: 400;
     color: #848484;
 }
 
-.capsuelYear {
+.capsuel-year {
     margin-left: 11px;
     background: #CACACA;
     width: 45px;
@@ -594,7 +602,7 @@ header {
     font-size: 12px;
 }
 
-.statusCapsuel {
+.status-capsuel {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -609,21 +617,21 @@ header {
     margin-top: 10px;
 }
 
-.statusCapsuel p {
+.status-capsuel p {
     font-size: 12px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
 }
 
-.statusCapsuel.resloved {
+.status-capsuel.resloved {
     background: #04DB00;
 }
 
 /* Pending CSS End */
 
 /* dashBoard CSS Start */
-.dashBoardContainer {
+.dash-board-container {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -631,24 +639,24 @@ header {
 }
 
 /* Upper Section Start */
-.ticketUpper,
-.upperSection {
+.ticket-upper,
+.upper-section {
     display: flex;
     align-items: center;
 }
 
-.chartSection {
+.chart-section {
     width: 70%;
     margin-top: 30px;
     margin-left: 25px;
 }
 
-.ticketsCounter {
+.tickets-counter {
     display: flex;
     gap: 63px;
 }
 
-.ticketItems span {
+.ticket-items span {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -658,12 +666,12 @@ header {
     margin-left: 1.8rem;
 }
 
-.disturbedTickets span {
+.disturbed-tickets span {
     margin-left: 0px;
     padding-top: 6px;
 }
 
-.ticketUpper p {
+.ticket-upper p {
     font-size: 24px;
     font-weight: 900;
     line-height: 29px;
@@ -671,17 +679,17 @@ header {
     margin-left: 7px;
 }
 
-.disturbedTickets {
+.disturbed-tickets {
     margin: 0px 35px 0px auto;
 }
 
-.disturbedTickets .innerTickets {
+.disturbed-tickets .inner-tickets {
     display: flex;
     width: 270px;
     height: 24px;
 }
 
-.disturbedTickets .innerTickets>div {
+.disturbed-tickets .inner-tickets>div {
     padding-left: 7px;
     display: flex;
     align-items: center;
@@ -691,24 +699,24 @@ header {
     letter-spacing: 0em;
 }
 
-.disturbedTickets .innerTickets .orange {
+.disturbed-tickets .inner-tickets .orange {
     border-radius: 4px 0px 0px 4px;
     width: 160px;
     background: #EC6C2180;
 }
 
-.disturbedTickets .innerTickets .voilet {
+.disturbed-tickets .inner-tickets .voilet {
     width: 52px;
     background: #39376880;
 }
 
-.disturbedTickets .innerTickets .blue {
+.disturbed-tickets .inner-tickets .blue {
     border-radius: 0px 4px 4px 0px;
     width: 58px;
     background: #A8CFEF80;
 }
 
-.ticketsTagLine {
+.tickets-tag-line {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
@@ -717,7 +725,7 @@ header {
     margin-top: 6px;
 }
 
-.raiseticketSection {
+.raise-ticket-section {
     width: 30%;
     background: #F8F8F8;
     padding: 30px 0px 0px 35px;
@@ -730,42 +738,42 @@ header {
     letter-spacing: 0em;
 }
 
-.raiseticketSection .subHeading {
+.raise-ticket-section .sub-heading {
     margin-top: 5px;
 }
 
-.raiseTicketForm {
+.raise-ticke-form {
     max-width: 335px;
     margin-top: 35px;
 }
 
-.raiseTicketForm .formInput {
+.raise-ticke-form .form-input {
     margin-top: 11px;
 }
 
-.formLabel {
+.form-label {
     font-size: 14px;
     font-weight: 400;
     line-height: 17px;
     color: #787878;
 }
 
-.formLabelInput {
+.form-label-input {
     margin-top: 11px;
 }
 
-.priorityRadio {
+.priority-radio {
     display: flex;
 }
 
-.radioBtn {
+.radio-btn {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 16px;
 }
 
-.priorityRadio label {
+.priority-radio label {
     margin-right: 30px;
     cursor: pointer;
 }
@@ -777,11 +785,11 @@ input[name='priority'] {
     height: 25px;
 }
 
-.formLabel.priority {
+.form-label.priority {
     margin-top: 26px;
 }
 
-.raiseTicketForm .formLabelInput select {
+.raise-ticke-form .form-label-input select {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
@@ -798,49 +806,49 @@ input[name='priority'] {
 /* Upper Section End */
 
 /* Middle Section Start */
-.middleSection {
+.middle-section {
     margin-top: 32px;
     display: flex;
 }
 
-.ticketTrend {
+.ticket-trend {
     width: 60%;
     display: flex;
     flex-direction: column;
 }
 
-.ticketTrend .innerText {
+.ticket-trend .inner-text {
     display: flex;
     justify-content: space-between;
     align-items: unset;
 }
 
-.ticketTrend .innerText img {
+.ticket-trend .inner-text img {
     cursor: pointer;
     margin-right: 50px;
 }
 
-.updatesandopen {
+.updates-and-open {
     width: 40%;
 }
 
-.ticketTrend h5 {
+.ticket-trend h5 {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
     letter-spacing: 0em;
 }
 
-.ticketTrend {
+.ticket-trend {
     display: flex;
     justify-content: space-between;
 }
 
-.ticketTrend img {
+.ticket-trend img {
     margin-bottom: 10px;
 }
 
-.raisedTicketBelow {
+.raised-ticket-below {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -848,12 +856,12 @@ input[name='priority'] {
     margin-top: 20px;
 }
 
-.updatesandopen .raisedTicketBelow {
+.updates-and-open .raised-ticket-below {
     margin-top: 0px;
     margin-left: 20px;
 }
 
-.updatesandopen .ticketInfoCard {
+.updates-and-open .ticket-info-card {
     width: 377px;
     height: 65px;
     margin-left: 20px;
@@ -861,30 +869,30 @@ input[name='priority'] {
     display: flex;
 }
 
-.updatesandopen .ticketInfoCard .tagCapsuel {
+.updates-and-open .ticket-info-card .tag-capsuel {
     margin-left: auto;
     margin-right: 16px;
     align-self: center;
     cursor: pointer;
 }
 
-.updatesandopen .priorityCards {
+.updates-and-open .priority-cards {
     margin: 0px;
 }
 
-.updatesandopen .ticketName {
+.updates-and-open .ticket-name {
     margin: 6px 0px 0px 17px;
 }
 
-.updatesandopen .ticketDate {
+.updates-and-open .ticket-date {
     margin: 3px 0px 0px 17px
 }
 
-.updatesandopen .ticketInfoCard .priorityCards p {
+.updates-and-open .ticket-info-card .priority-cards p {
     font-size: 16px;
 }
 
-.updatesandopen .viewAll {
+.updates-and-open .view-all {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -892,7 +900,7 @@ input[name='priority'] {
     margin-right: 1.5rem;
 }
 
-.updatesandopen .viewAll a {
+.updates-and-open .view-all a {
     text-decoration: none;
     color: #EC6C21;
     margin-right: 5px;
@@ -902,7 +910,7 @@ input[name='priority'] {
     letter-spacing: 0em;
 }
 
-.updatesandopen .viewAll img {
+.updates-and-open .view-all img {
     height: 16px;
 }
 
@@ -916,11 +924,11 @@ input[name='priority'] {
         padding: 10px;
     }
 
-    .leftImg {
+    .left-img {
         display: none;
     }
 
-    .formContainer {
+    .form-container {
         height: auto;
         width: 100%;
         padding: 20px;
@@ -932,13 +940,160 @@ input[name='priority'] {
         width: 100%;
     }
 
-    .ErroContainer {
+    .error-container {
         width: 90%;
         top: 20px;
+        height: max-content;
     }
 
-    .errorpopup .cross {
+    .error-popup .cross {
         top: -11px;
         right: -8px;
+    }
+}
+
+#hamburger,
+.mobile-navigation {
+    display: none;
+}
+
+.bar {
+    height: 3px;
+    width: 60%;
+    background-color: rgba(11, 77, 137);
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1 {
+    transform: translateY(-4px);
+}
+
+#bar3 {
+    transform: translateY(4px);
+}
+
+
+/* navbar Mobile Responsive into Hamburger */
+
+@media only screen and (max-width:990px) {
+
+    .nav,
+    .notification,
+    .profile {
+        display: none;
+    }
+
+    .header-container .header-logo {
+        margin: 8px 20px 6px 16px;
+    }
+
+    #hamburger {
+        display: block;
+        position: relative;
+        right: 5px;
+        top: 1px;
+        margin-left: 10px;
+        width: 35px;
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    .raise-btn-wel {
+        margin-top: 20px;
+    }
+
+    .mobile-navigation {
+        display: block;
+        position: fixed;
+        width: 0px;
+        height: 100%;
+        z-index: 2;
+        left: revert;
+        right: 0px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 64px 0px #0000001A;
+        transition: width 0.5s ease-in-out;
+    }
+
+    .nav-active {
+        width: 300px;
+    }
+
+    .change {
+        display: block;
+    }
+
+    .change .bar {
+        background-color: red;
+    }
+
+    .change #bar1 {
+        transform: translateY(0px) rotateZ(-45deg);
+    }
+
+    .change #bar2 {
+        opacity: 0;
+    }
+
+    .change #bar3 {
+        transform: translateY(-6px) rotateZ(45deg);
+    }
+
+    .cross-mob img {
+        position: fixed;
+        right: 21px;
+        top: 19px;
+        cursor: pointer;
+    }
+
+    .nav-mob {
+        position: absolute;
+        left: 10%;
+        top: 25%;
+    }
+
+    .nav-mob ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-mob ul li {
+        list-style: none;
+        margin: 10px 0px;
+    }
+
+    .nav-mob ul li.active {
+        border-bottom: 1px solid #0D4D8A;
+        border-bottom-width: 2px;
+        width: max-content;
+    }
+
+    .notification-mob {
+        position: absolute;
+        top: 25px;
+        cursor: pointer;
+        left: 10%;
+    }
+
+    .profile-mob {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        position: absolute;
+        left: 10%;
+        top: 15%;
+        cursor: pointer;
+    }
+
+    .profile-mob .short-form{
+        margin-left: 0px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .header-container .header-logo {
+        width: 105px;
     }
 }

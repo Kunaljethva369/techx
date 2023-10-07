@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <div class="headerContainer">
-            <img class="headerLogo" src="./Assets/techxpert-logo 1.png">
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
             <nav class="nav">
                 <ul>
                     <li class="active"><a href="/dashBoard.html">Dashboard</a></li>
@@ -24,241 +24,268 @@
                     <li><a href="#">Reports</a></li>
                 </ul>
             </nav>
-            <div class="raiseticket">
-                <button class="raiseticketbtn">Rasie a Ticket</button>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
             </div>
             <div class="notification">
                 <img src="./Assets/notification.png">
             </div>
             <div class="profile">
                 <h4>Harsh Mehta</h4>
-                <div class="shortForm">
+                <div class="short-form">
                     <span>HM</span>
                 </div>
             </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
-        <section class="dashBoardContainer">
-            <div class="chartSection">
-                <div class="upperSection">
-                    <div class="ticketsCounter">
-                        <div class="ticketItems">
-                            <div class="ticketUpper">
+        <section class="dash-board-container">
+            <div class="chart-section">
+                <div class="upper-section">
+                    <div class="tickets-counter">
+                        <div class="ticket-items">
+                            <div class="ticket-upper">
                                 <img src="./Assets/notes.png">
                                 <p>345</p>
                             </div>
                             <span>Total Tickets</span>
                         </div>
-                        <div class="ticketItems">
-                            <div class="ticketUpper">
+                        <div class="ticket-items">
+                            <div class="ticket-upper">
                                 <img src="./Assets/enegry.png">
                                 <p>98</p>
                             </div>
                             <span>Open Tickets</span>
                         </div>
-                        <div class="ticketItems">
-                            <div class="ticketUpper">
+                        <div class="ticket-items">
+                            <div class="ticket-upper">
                                 <img src="./Assets/roundtick.png">
                                 <p>233</p>
                             </div>
                             <span>Closed Tickets</span>
                         </div>
-                        <div class="ticketItems">
-                            <div class="ticketUpper">
+                        <div class="ticket-items">
+                            <div class="ticket-upper">
                                 <img src="./Assets/excalmation.png">
                                 <p>14</p>
                             </div>
                             <span>Pending Tickets</span>
                         </div>
                     </div>
-                    <div class="disturbedTickets">
-                        <div class="innerTickets">
+                    <div class="disturbed-tickets">
+                        <div class="inner-tickets">
                             <div class="orange">65%</div>
                             <div class="voilet">15%</div>
                             <div class="blue">20%</div>
                         </div>
-                        <div class="ticketsTagLine">Distribution of Tickets</div>
+                        <div class="tickets-tag-line">Distribution of Tickets</div>
                     </div>
                 </div>
-                <div class="middleSection">
-                    <div class="ticketTrend">
-                        <div class="innerText">
+                <div class="middle-section">
+                    <div class="ticket-trend">
+                        <div class="inner-text">
                             <h5>Ticket Trend</h5>
                             <img src="./Assets/dots-vertical.png">
                         </div>
                         <div>
                             <img src="./Assets/Chartmodule.png">
                         </div>
-                        <div class="raisedTicketBelow">Resolved Tickets</div>
+                        <div class="raised-ticket-below">Resolved Tickets</div>
                     </div>
-                    <div class="updatesandopen">
-                        <div class="raisedTicketBelow">Updates</div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="ticketName">
+                    <div class="updates-and-open">
+                        <div class="raised-ticket-below">Updates</div>
+                        <div class="ticket-info-card">
+                            <div class="priority-cards">
+                                <div class="ticket-name">
                                     <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
+                                    <span class="capsuel-year">2021</span>
                                 </div>
-                                <div class="ticketDate">
+                                <div class="ticket-date">
                                     <span>Raised on</span>
                                     18 Jul’23
                                 </div>
                             </div>
-                            <div class="tagCapsuel Orange">
+                            <div class="tag-capsuel Orange">
                                 <img src="./Assets/message.png">
                                 <p>New Replies</p>
                             </div>
                         </div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="ticketName">
+                        <div class="ticket-info-card">
+                            <div class="priority-cards">
+                                <div class="ticket-name">
                                     <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
+                                    <span class="capsuel-year">2021</span>
                                 </div>
-                                <div class="ticketDate">
+                                <div class="ticket-date">
                                     <span>Raised on</span>
                                     18 Jul’23
                                 </div>
                             </div>
-                            <div class="tagCapsuel Orange">
+                            <div class="tag-capsuel Orange">
                                 <img src="./Assets/message.png">
                                 <p>New Replies</p>
                             </div>
                         </div>
-                        <div class="raisedTicketBelow" style="margin-top: 13px;">Open Tickets</div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="ticketName">
+                        <div class="raised-ticket-below" style="margin-top: 13px;">Open Tickets</div>
+                        <div class="ticket-info-card">
+                            <div class="priority-cards">
+                                <div class="ticket-name">
                                     <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
+                                    <span class="capsuel-year">2021</span>
                                 </div>
-                                <div class="ticketDate">
+                                <div class="ticket-date">
                                     <span>Raised on</span>
                                     18 Jul’23
                                 </div>
                             </div>
                         </div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="ticketName">
+                        <div class="ticket-info-card">
+                            <div class="priority-cards">
+                                <div class="ticket-name">
                                     <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
+                                    <span class="capsuel-year">2021</span>
                                 </div>
-                                <div class="ticketDate">
+                                <div class="ticket-date">
                                     <span>Raised on</span>
                                     18 Jul’23
                                 </div>
                             </div>
                         </div>
-                        <div class="viewAll">
-                            <a href="#" class="viewAllLink">View All</a>
+                        <div class="view-all">
+                            <a href="#">View All</a>
                             <img src="./Assets/arrow.png">
                         </div>
                     </div>
                 </div>
-                <div class="lowerSection">
-                    <div class="ticketInfoContainer" style="margin-top: 16px;">
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="tagCapsuel Orange">
-                                    <img src="./Assets/organetag.png">
-                                    <p>High Priority</p>
-                                </div>
-                                <div class="ticketName">
-                                    <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
-                                </div>
-                                <div class="ticketDate">
-                                    <span>Raised on</span>
-                                    18 Jul’23
-                                </div>
-                                <div class="statusCapsuel resloved">
-                                    <img src="./Assets/tick.png">
-                                    <p>Resloved</p>
-                                </div>
+                <div class="ticket-info-container" style="margin-top: 16px;">
+                    <div class="ticket-info-card">
+                        <div class="priority-cards">
+                            <div class="tag-capsuel Orange">
+                                <img src="./Assets/organetag.png">
+                                <p>High Priority</p>
+                            </div>
+                            <div class="ticket-name">
+                                <p>Cisco N-512# XZ</p>
+                                <span class="capsuel-year">2021</span>
+                            </div>
+                            <div class="ticket-date">
+                                <span>Raised on</span>
+                                18 Jul’23
+                            </div>
+                            <div class="status-capsuel resloved">
+                                <img src="./Assets/tick.png">
+                                <p>Resloved</p>
                             </div>
                         </div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="tagCapsuel Blue">
-                                    <img src="./Assets/blueTag.png">
-                                    <p>Medium Priority</p>
-                                </div>
-                                <div class="ticketName">
-                                    <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
-                                </div>
-                                <div class="ticketDate">
-                                    <span>Raised on</span>
-                                    18 Jul’23
-                                </div>
-                                <div class="statusCapsuel resloved">
-                                    <img src="./Assets/tick.png">
-                                    <p>Resloved</p>
-                                </div>
+                    </div>
+                    <div class="ticket-info-card">
+                        <div class="priority-cards">
+                            <div class="tag-capsuel Blue">
+                                <img src="./Assets/blueTag.png">
+                                <p>Medium Priority</p>
+                            </div>
+                            <div class="ticket-name">
+                                <p>Cisco N-512# XZ</p>
+                                <span class="capsuel-year">2021</span>
+                            </div>
+                            <div class="ticket-date">
+                                <span>Raised on</span>
+                                18 Jul’23
+                            </div>
+                            <div class="status-capsuel resloved">
+                                <img src="./Assets/tick.png">
+                                <p>Resloved</p>
                             </div>
                         </div>
-                        <div class="ticketInfoCard">
-                            <div class="priorityCards">
-                                <div class="tagCapsuel Blue">
-                                    <img src="./Assets/blueTag.png">
-                                    <p>Medium Priority</p>
-                                </div>
-                                <div class="ticketName">
-                                    <p>Cisco N-512# XZ</p>
-                                    <span class="capsuelYear">2021</span>
-                                </div>
-                                <div class="ticketDate">
-                                    <span>Raised on</span>
-                                    18 Jul’23
-                                </div>
-                                <div class="statusCapsuel resloved">
-                                    <img src="./Assets/tick.png">
-                                    <p>Resloved</p>
-                                </div>
+                    </div>
+                    <div class="ticket-info-card">
+                        <div class="priority-cards">
+                            <div class="tag-capsuel Blue">
+                                <img src="./Assets/blueTag.png">
+                                <p>Medium Priority</p>
+                            </div>
+                            <div class="ticket-name">
+                                <p>Cisco N-512# XZ</p>
+                                <span class="capsuel-year">2021</span>
+                            </div>
+                            <div class="ticket-date">
+                                <span>Raised on</span>
+                                18 Jul’23
+                            </div>
+                            <div class="status-capsuel resloved">
+                                <img src="./Assets/tick.png">
+                                <p>Resloved</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="raiseticketSection">
+            <div class="raise-ticket-section">
                 <h2 class="heading-sm">Raise a Ticket</h2>
-                <h5 class="subHeading">Create new ticket quickly!</h5>
-                <form class="raiseTicketForm">
-                    <div class="formLabelInput">
-                        <label class="formLabel">Subject</label>
-                        <input type="text" class="formInput">
+                <h5 class="sub-heading">Create new ticket quickly!</h5>
+                <form class="raise-ticke-form">
+                    <div class="form-label-input">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-input">
                     </div>
-                    <div class="formLabelInput">
-                        <label class="formLabel">Device</label>
-                        <select class="formInput">
+                    <div class="form-label-input">
+                        <label class="form-label">Device</label>
+                        <select class="form-input">
                             <option value=""></option>
                             <option value="iphone">Iphone</option>
                             <option value="realme">Realme</option>
                             <option value="samsung">Samsung</option>
                         </select>
                     </div>
-                    <div class="formLabel priority">Priority</div>
-                    <div class="priorityRadio">
-                        <div class="radioBtn">
-                            <input type="radio" id="html" name="priority" value="high" checked>
-                            <label for="html">High</label><br>
+                    <div class="form-label priority">Priority</div>
+                    <div class="priority-radio">
+                        <div class="radio-btn">
+                            <input type="radio" id="high" name="priority" value="high" checked>
+                            <label for="high">High</label><br>
                         </div>
-                        <div class="radioBtn">
-                            <input type="radio" id="css" name="priority" value="medium">
-                            <label for="css">Medium</label><br>
+                        <div class="radio-btn">
+                            <input type="radio" id="medium" name="priority" value="medium">
+                            <label for="medium">Medium</label><br>
                         </div>
-                        <div class="radioBtn">
-                            <input type="radio" id="javascript" name="priority" value="low">
-                            <label for="javascript">Low</label>
+                        <div class="radio-btn">
+                            <input type="radio" id="low" name="priority" value="low">
+                            <label for="low">Low</label>
                         </div>
                     </div>
-                    <button class="formSubmitBtn">Continue</button>
+                    <button class="form-submit-btn">Continue</button>
                 </form>
             </div>
         </section>
     </main>
+    <script src="./JS/index.js"></script>
 </body>
 
 </html>
