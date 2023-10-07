@@ -457,6 +457,10 @@ header {
     padding-top: 61px;
 }
 
+.pending-ticket .heading{
+    text-align: left;
+}
+
 .status-btn-container {
     background: #DBDBDB;
     width: 180px;
@@ -952,6 +956,10 @@ input[name='priority'] {
     }
 }
 
+
+
+/* navbar Mobile Responsive into Hamburger Start */
+
 #hamburger,
 .mobile-navigation {
     display: none;
@@ -973,10 +981,6 @@ input[name='priority'] {
 #bar3 {
     transform: translateY(4px);
 }
-
-
-/* navbar Mobile Responsive into Hamburger */
-
 @media only screen and (max-width:990px) {
 
     .nav,
@@ -1095,5 +1099,45 @@ input[name='priority'] {
 @media only screen and (max-width:480px) {
     .header-container .header-logo {
         width: 105px;
+    }
+}
+
+/* navbar Mobile Responsive into Hamburger End*/
+
+/* Pending ticket and resloved ticket responsive */
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+    .pending-ticket{
+        padding: 61px 10px 10px 10px;
+    }
+    .pending-ticket .heading, .pending-ticket .sub-heading{
+        text-align: center;
+    }
+    .pending-ticket .status-btn-container{
+        margin: 23px auto;
+    }
+    .ticket-info-container{
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+        place-items: center;
+    }
+    .ticket-info-card, .ticket-info-card.dotted{
+        width: 225px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .pending-ticket{
+        padding: 61px 10px 10px 10px;
+    }
+    .pending-ticket .heading, .pending-ticket .sub-heading{
+        text-align: center;
+    }
+    .pending-ticket .status-btn-container{
+        margin: 23px auto;
+    }
+    .ticket-info-container{
+        grid-template-columns: auto;
+        place-content: center;
     }
 }
