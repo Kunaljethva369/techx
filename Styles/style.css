@@ -493,7 +493,7 @@ header {
 
 .ticket-info-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     margin-top: 23px;
     gap: 24px;
 }
@@ -638,8 +638,9 @@ header {
 .dash-board-container {
     display: flex;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     padding-top: 61px;
+    /* background-color: red; */
 }
 
 /* Upper Section Start */
@@ -730,7 +731,7 @@ header {
 }
 
 .raise-ticket-section {
-    width: 28%;
+    width: 30%;
     background: #F8F8F8;
     padding: 30px 20px 0px 35px;
 }
@@ -797,14 +798,14 @@ input[name='priority'] {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url("./Assets/downArrow.png");
-    background-repeat: no-repeat;
-    background-position-x: 92%;
-    background-position-y: 14px;
-    border-radius: 2px;
-    margin-right: 2rem;
-    padding: 1rem;
-    padding-right: 2rem;
+    /* background-image: url("./Assets/downArrow.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position-x: 92%; */
+    /* background-position-y: 14px; */
+    /* border-radius: 2px; */
+    /* margin-right: 2rem; */
+    /* padding: 1rem; */
+    /* padding-right: 2rem; */
 }
 
 /* Upper Section End */
@@ -829,7 +830,7 @@ input[name='priority'] {
 
 .ticket-trend .inner-text img {
     cursor: pointer;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .updates-and-open {
@@ -1214,8 +1215,35 @@ input[name='priority'] {
 
 /* Dashboard screen responsive Start */
 
+.raised-ticket-below-desk{
+    display: block;
+}
 
-@media only screen and (min-width:681px) and (max-width:919px) {
+@media only screen and (min-width:1301px) and (max-width:1400px) {
+    .dash-board-container .ticket-info-container{
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:1383px) {
+    .raise-ticket-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:1383px) {
+    .chart-section{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .raised-ticket-below-desk{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:681px) and (max-width:1000px) {
 
     .dash-board-container {
         justify-content: center;
@@ -1358,7 +1386,7 @@ input[name='priority'] {
     }
 
     .dash-board-container .ticket-info-container .ticket-info-card {
-        width: 250px;
+        width: 230px;
     }
 }
 
@@ -1378,14 +1406,14 @@ input[name='priority'] {
 
     .upper-section .tickets-counter {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 2fr);
         place-content: center;
         gap: 0px;
         margin: 0px auto;
     }
 
     .upper-section .ticket-items {
-        width: 130px;
+        width: 126px;
     }
 
     .upper-section .disturbed-tickets {
@@ -1427,10 +1455,11 @@ input[name='priority'] {
         grid-template-columns: auto auto;
         margin-left: 20px;
         padding-bottom: 10px;
+        gap: 10px;
     }
 
     .dash-board-container .ticket-info-container .ticket-info-card {
-        width: 230px;
+        width: 218px;
     }
 
 
@@ -1503,6 +1532,10 @@ input[name='priority'] {
         margin-top: 20px;
     }
 
+    .upper-section{
+        position: relative;
+    }
+
     .upper-section .tickets-counter {
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -1517,7 +1550,7 @@ input[name='priority'] {
 
     .upper-section .disturbed-tickets {
         position: absolute;
-        top: 34.5%;
+        bottom: -70px;
         left: 50%;
         transform: translate(-50%);
         margin: 0px 0px 0px 0px;
@@ -1611,12 +1644,6 @@ input[name='priority'] {
 
     .updates-and-open .ticket-info-card .ticket-date {
         margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width:1300px) {
-    .raise-ticket-section {
-        display: none;
     }
 }
 
