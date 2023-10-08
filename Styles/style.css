@@ -331,7 +331,7 @@ header {
 
 .header-container .header-logo {
     margin: 8px 50px 6px 16px;
-    height: 46px;
+    /* height: 46px; */
     width: 179px;
 }
 
@@ -457,7 +457,7 @@ header {
     padding-top: 61px;
 }
 
-.pending-ticket .heading{
+.pending-ticket .heading {
     text-align: left;
 }
 
@@ -507,7 +507,7 @@ header {
 }
 
 .ticket-info-card.dotted {
-    width: 296px;
+    max-width: 296px;
     height: 155px;
     border-radius: 8px;
     border-style: dotted;
@@ -730,9 +730,9 @@ header {
 }
 
 .raise-ticket-section {
-    width: 30%;
+    width: 28%;
     background: #F8F8F8;
-    padding: 30px 0px 0px 35px;
+    padding: 30px 20px 0px 35px;
 }
 
 .heading-sm {
@@ -812,11 +812,11 @@ input[name='priority'] {
 /* Middle Section Start */
 .middle-section {
     margin-top: 32px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .ticket-trend {
-    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -833,7 +833,8 @@ input[name='priority'] {
 }
 
 .updates-and-open {
-    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .ticket-trend h5 {
@@ -902,6 +903,7 @@ input[name='priority'] {
     align-items: center;
     margin-top: 6px;
     margin-right: 1.5rem;
+    width: 100%;
 }
 
 .updates-and-open .view-all a {
@@ -981,6 +983,7 @@ input[name='priority'] {
 #bar3 {
     transform: translateY(4px);
 }
+
 @media only screen and (max-width:990px) {
 
     .nav,
@@ -1091,7 +1094,7 @@ input[name='priority'] {
         cursor: pointer;
     }
 
-    .profile-mob .short-form{
+    .profile-mob .short-form {
         margin-left: 0px;
     }
 }
@@ -1104,68 +1107,517 @@ input[name='priority'] {
 
 /* navbar Mobile Responsive into Hamburger End*/
 
-/* Pending ticket and resloved ticket responsive */
+/* Pending ticket and resloved ticket responsive Start */
 
-@media only screen and (min-width:1024px) and (max-width:1367px) {
-    .pending-ticket{
+@media only screen and (min-width:1101px) and (max-width:1367px) {
+    .pending-ticket {
         padding: 61px 10px 10px 10px;
     }
 
-    .ticket-info-container{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+    .pending-ticket .ticket-info-container {
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-    .ticket-info-card, .ticket-info-card.dotted{
-        width: 235px;
+
+    .pending-ticket .ticket-info-card,
+    .pending-ticket .ticket-info-card.dotted {
+        max-width: 255px;
     }
 }
 
-@media only screen and (min-width:736px) and (max-width:1024px) {
-    .pending-ticket{
+@media only screen and (min-width:920px) and (max-width:1100px) {
+    .pending-ticket {
         padding: 61px 10px 10px 10px;
     }
 
-    .ticket-info-container{
-        grid-template-columns: 1fr 1fr 1fr;
+    .pending-ticket .ticket-info-container {
+        grid-template-columns: auto auto auto;
         gap: 20px;
     }
-    .ticket-info-card, .ticket-info-card.dotted{
-        width: 225px;
+
+    .pending-ticket .ticket-info-card,
+    .pending-ticket .ticket-info-card.dotted {
+        max-width: 275px;
     }
 }
 
-@media only screen and (min-width:480px) and (max-width:736px) {
-    .pending-ticket{
+@media only screen and (min-width:736px) and (max-width:920px) {
+    .pending-ticket {
         padding: 61px 10px 10px 10px;
     }
-    .pending-ticket .heading, .pending-ticket .sub-heading{
+
+    .pending-ticket .heading,
+    .pending-ticket .sub-heading {
         text-align: center;
     }
-    .pending-ticket .status-btn-container{
+
+    .pending-ticket .status-btn-container {
         margin: 23px auto;
     }
-    .ticket-info-container{
+
+    .pending-ticket .ticket-info-container {
         grid-template-columns: 2fr 2fr;
         gap: 20px;
         place-items: center;
     }
-    .ticket-info-card, .ticket-info-card.dotted{
-        width: 225px;
+}
+
+@media only screen and (min-width:480px) and (max-width:736px) {
+    .pending-ticket {
+        padding: 61px 10px 10px 10px;
+    }
+
+    .pending-ticket .heading,
+    .pending-ticket .sub-heading {
+        text-align: center;
+    }
+
+    .pending-ticket .status-btn-container {
+        margin: 23px auto;
+    }
+
+    .pending-ticket .ticket-info-container {
+        grid-template-columns: 2fr 2fr;
+        gap: 20px;
+        place-items: center;
+    }
+
+    .pending-ticket .ticket-info-card,
+    .pending-ticket .ticket-info-card.dotted {
+        max-width: 225px;
     }
 }
 
 @media only screen and (max-width:480px) {
-    .pending-ticket{
+    .pending-ticket {
         padding: 61px 10px 10px 10px;
     }
-    .pending-ticket .heading, .pending-ticket .sub-heading{
+
+    .pending-ticket .heading,
+    .pending-ticket .sub-heading {
         text-align: center;
     }
-    .pending-ticket .status-btn-container{
+
+    .pending-ticket .status-btn-container {
         margin: 23px auto;
     }
-    .ticket-info-container{
+
+    .pending-ticket .ticket-info-container {
+        grid-template-columns: auto;
+        place-content: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+}
+
+/* Pending ticket and resloved ticket responsive End */
+
+/* Dashboard screen responsive Start */
+
+
+@media only screen and (min-width:681px) and (max-width:919px) {
+
+    .dash-board-container {
+        justify-content: center;
+        width: 95%;
+        margin: 0px auto;
+    }
+
+    .chart-section {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .upper-section .tickets-counter {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+        gap: 0px;
+        margin: 0px auto;
+    }
+
+    .upper-section .ticket-items {
+        width: 130px;
+    }
+
+    .upper-section .disturbed-tickets {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .middle-section {
+        margin-top: 60px;
+        display: block;
+    }
+
+    .chart img{
+        margin: 0px auto;
+    }
+
+    .middle-section .ticket-trend {
+        width: 100%;
+    }
+
+    .middle-section .ticket-trend {
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+
+    .ticket-trend,
+    .chart,
+    .updates-and-open {
+        width: 100%;
+    }
+
+    .middle-section .ticket-trend .inner-text img {
+        margin-right: 30px;
+    }
+
+    .middle-section .ticket-trend h5 {
+        margin-left: 10px;
+    }
+
+    .dash-board-container .ticket-info-container {
+        grid-template-columns: auto auto;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .dash-board-container .ticket-info-container .ticket-info-card {
+        width: 270px;
+    }
+
+
+    .dash-board-container .ticket-info-card {
+        width: 285px;
+    }
+
+    .updates-and-open {
+        position: relative;
+        padding-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;  
+    }
+
+    .updates-and-open .raised-ticket-below {
+        margin-left: 14px;
+    }
+
+    .updates-and-open .open-tickets-mob,
+    .updates-and-open .ticket-status-mob {
+        display: flex;
+    }
+
+    .updates-and-open .raised-ticket-below-mob {
+        display: block;
+        margin-left: 14px;
+        padding-top: 13px;
+    }
+
+    .updates-and-open .ticket-info-card {
+        width: 50% !important;
+        height: 116px;
+        display: block;
+    }
+
+    .updates-and-open .open-tickets-mob .ticket-info-card {
+        height: 81px;
+    }
+
+    .updates-and-open .ticket-info-card .tag-capsuel {
+        margin: 10px 2px auto 10px;
+    }
+
+    .view-all {
+        width: 99%;
+        position: relative;
+        top: 19px;
+    }
+
+    .updates-and-open .priority-cards {
+        gap: 11px;
+    }
+
+    .dash-board-container .raised-ticket-below-mob {
+        display: block;
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (max-width:900px) {
+    .dash-board-container .ticket-info-container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left: 20px;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+
+    .dash-board-container .ticket-info-container .ticket-info-card {
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:521px) and (max-width:680px) {
+
+    .dash-board-container {
+        justify-content: center;
+        width: 93%;
+        margin: 0px auto;
+    }
+
+    .chart-section {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .upper-section .tickets-counter {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-content: center;
+        gap: 0px;
+        margin: 0px auto;
+    }
+
+    .upper-section .ticket-items {
+        width: 130px;
+    }
+
+    .upper-section .disturbed-tickets {
+        position: absolute;
+        top: 23%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .middle-section {
+        margin-top: 60px;
+        display: block;
+    }
+
+    .middle-section .ticket-trend {
+        width: 100%;
+    }
+
+    .middle-section .ticket-trend {
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+
+    .ticket-trend,
+    .chart,
+    .updates-and-open {
+        width: 100%;
+    }
+
+    .middle-section .ticket-trend .inner-text img {
+        margin-right: 30px;
+    }
+
+    .middle-section .ticket-trend h5 {
+        margin-left: 10px;
+    }
+
+    .dash-board-container .ticket-info-container {
+        grid-template-columns: auto auto;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
+
+    .dash-board-container .ticket-info-container .ticket-info-card {
+        width: 230px;
+    }
+
+
+    .dash-board-container .ticket-info-card {
+        width: 285px;
+    }
+    
+    .updates-and-open {
+        margin-left: 0px;
+        margin-right: 0px;
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .updates-and-open .raised-ticket-below {
+        margin-left: 14px;
+    }
+
+    .updates-and-open .open-tickets-mob,
+    .updates-and-open .ticket-status-mob {
+        display: flex;
+    }
+
+    .updates-and-open .raised-ticket-below-mob {
+        display: block;
+        margin-left: 14px;
+        padding-top: 13px;
+    }
+
+    .updates-and-open .ticket-info-card {
+        width: 50% !important;
+        height: 116px;
+        display: block;
+    }
+
+    .updates-and-open .open-tickets-mob .ticket-info-card {
+        height: 81px;
+    }
+
+    .updates-and-open .ticket-info-card .tag-capsuel {
+        margin: 10px 2px auto 10px;
+    }
+
+    .view-all {
+        width: 103%;
+        position: relative;
+        top: 19px;
+    }
+
+    .updates-and-open .priority-cards {
+        gap: 11px;
+    }
+
+    .dash-board-container .raised-ticket-below-mob {
+        display: block;
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+
+}
+
+@media only screen and (max-width:520px) {
+    .dash-board-container {
+        justify-content: center;
+    }
+
+    .chart-section {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+
+    .upper-section .tickets-counter {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        place-content: center;
+        gap: 10px;
+        margin: 0px auto;
+    }
+
+    .upper-section .ticket-items {
+        width: 130px;
+    }
+
+    .upper-section .disturbed-tickets {
+        position: absolute;
+        top: 34.5%;
+        left: 50%;
+        transform: translate(-50%);
+        margin: 0px 0px 0px 0px;
+    }
+
+    .middle-section {
+        margin-top: 80px;
+        display: block;
+    }
+
+    .middle-section .ticket-trend {
+        width: 100%;
+    }
+
+    .middle-section .ticket-trend {
+        margin: 0px auto;
+        padding-top: 20px;
+    }
+
+    .ticket-trend,
+    .chart,
+    .updates-and-open {
+        width: 90%;
+    }
+
+
+    .middle-section .ticket-trend .inner-text img {
+        margin-right: 30px;
+    }
+
+    .middle-section .ticket-trend h5 {
+        margin-left: 10px;
+    }
+
+    .dash-board-container .ticket-info-container {
         grid-template-columns: auto;
         place-content: center;
     }
+
+
+    .dash-board-container .ticket-info-card {
+        width: 285px;
+    }
+
+    .updates-and-open {
+        position: relative;
+        padding-top: 20px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .updates-and-open .raised-ticket-below {
+        margin-left: 14px;
+    }
+
+    .updates-and-open .ticket-info-card {
+        width: 100% !important;
+        display: block;
+        height: 88px;
+    }
+
+    .updates-and-open .ticket-info-card .tag-capsuel {
+        margin-top: -20px;
+    }
+
+    .view-all {
+        width: 105%;
+        position: relative;
+        top: -226px;
+    }
+
+    .updates-and-open .priority-cards {
+        gap: 11px;
+    }
+
+    .dash-board-container .raised-ticket-below-mob {
+        display: block;
+        margin-left: 14px;
+        margin-top: 0px;
+    }
+
+    .updates-and-open .ticket-info-card .status-capsuel.resloved {
+        position: relative;
+        top: -43px;
+        right: -170px;
+    }
+
+    .updates-and-open .ticket-info-card .ticket-name {
+        margin-top: 4px;
+    }
+
+    .updates-and-open .ticket-info-card .ticket-date {
+        margin-top: 10px;
+    }
 }
+
+@media only screen and (max-width:1300px) {
+    .raise-ticket-section {
+        display: none;
+    }
+}
+
+/* Dashboard screen responsive Start End */
