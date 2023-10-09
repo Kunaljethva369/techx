@@ -933,7 +933,8 @@ input[name='priority'] {
 /* User Profile Start */
 
 .user-profile-container,
-.raise-ticket-container {
+.raise-ticket-container,
+.ticket-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1050,6 +1051,10 @@ input[name='priority'] {
 
 .address-detail form .raise-ticket-btn {
     margin-top: 18px;
+    padding: 10px 12px;
+    width: max-content;
+    display: flex;
+    align-items: center;
 }
 
 /* User Profile End */
@@ -1067,7 +1072,7 @@ input[name='priority'] {
 
 .raise-ticket-container .go-back {
     width: 924px;
-    margin-bottom: 45px;
+    margin-bottom: 38px;
 }
 
 .raise-ticket-container .upper-section {
@@ -1080,8 +1085,8 @@ input[name='priority'] {
 }
 
 .raise-ticket-container .upper-section .right-side .text-area {
-    width: 444px;
     height: 230px;
+    width: 444px;
 }
 
 .raise-ticket-container .upper-section .right-side .text-area .form-input::placeholder {
@@ -1155,6 +1160,188 @@ input[name='priority'] {
 }
 
 /* Raise a Ticket End */
+
+
+/* Ticket Details Start */
+
+.ticket-description {
+    width: 924px;
+    height: 303px;
+    border-radius: 16px;
+    border: 1px;
+    background: rgba(217, 221, 228, 0.19);
+    border: 1px solid rgba(219, 219, 219, 1);
+    padding: 20px 21px;
+}
+
+.ticket-details .go-back {
+    width: 924px;
+    margin-bottom: 25px;
+}
+
+.ticket-description .capsuel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ticket-description .capsuel .status-capsuel {
+    margin-top: 0px;
+    background-color: #EC6C21;
+    width: max-content;
+}
+
+.ticket-description .capsuel .status-capsuel p {
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.ticket-description .ticket-name p {
+    font-size: 24px;
+}
+
+.mask-grp {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.issueStatement {
+    margin-top: 24px;
+}
+
+.read-more {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #EC6C21;
+    text-decoration: none;
+    line-height: 2.7;
+}
+
+.ticket-description .sub-heading {
+    color: black;
+    font-weight: 700;
+    line-height: 2;
+    margin-left: -18px;
+}
+
+.customer-reply {
+    width: 924px;
+    height: 216px;
+    border-radius: 15px;
+    border: 1px;
+    margin-top: 45px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    padding: 14px 22px;
+}
+
+.customer-profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9px;
+}
+
+.customer-profile p:first-child {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: black;
+}
+
+.customer-profile .designation {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: rgba(120, 120, 120, 1);
+}
+
+.cust-date {
+    align-self: flex-start;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    color: rgba(128, 128, 128, 1);
+}
+
+.cust-reply-list {
+    margin-left: 15px;
+    margin-top: 13px;
+}
+
+.cust-reply-list li p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: rgba(43, 43, 43, 1);
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+}
+
+.feedback .ml {
+    margin-right: 22px;
+}
+
+.feedback img {
+    margin-right: 6px;
+}
+
+.feedback p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: rgba(16, 16, 16, 1);
+}
+
+.customer-reply-submit {
+    width: 924px;
+    height: 203px;
+    border-radius: 15px;
+    border: 1px;
+    background: linear-gradient(0deg, #CCE9F1, #CCE9F1),
+        linear-gradient(0deg, #E7E7E7, #E7E7E7);
+    border: 1px solid rgba(231, 231, 231, 1);
+    margin-top: 27px;
+    margin-bottom: 20px;
+    padding: 18px 27px;
+}
+
+.customer-reply-submit .profile .short-form {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+    margin-right: 9px;
+    margin-left: 0px;
+}
+
+.customer-reply-submit .profile h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.customer-reply-submit input{
+    margin-top: 14px;
+}
+
+.customer-reply-submit .form-submit-btn{
+    width: 133px;
+    font-size: 16px;
+}
+
+/* Ticket Details End */
 
 /* Mobile Screen to Tablet Screen */
 @media only screen and (max-width:767px) {
@@ -2013,7 +2200,7 @@ input[name='priority'] {
         padding: 15px 15px;
     }
 
-    .upload-items{
+    .upload-items {
         place-self: center;
     }
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Detail</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
+            </div>
+            <div class="notification">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="profile">
+                <h4>Harsh Mehta</h4>
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+            </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="ticket-details">
+            <div class="go-back">
+                <img src="./Assets/backArrow.png" style="height: 24px; cursor: pointer;">
+                <span class="go-back-text">Ticket ID: 3658</span>
+            </div>
+            <div class="ticket-description">
+                <div class="capsuel">
+                    <div class="tag-capsuel Blue">
+                        <img src="./Assets/blueTag.png">
+                        <p>Medium Priority</p>
+                    </div>
+                    <div class="status-capsuel resloved">
+                        <img src="./Assets/tick.png">
+                        <p>Resloved</p>
+                    </div>
+                </div>
+                <div class="ticket-name">
+                    <p>Cisco N-512# XZ</p>
+                </div>
+                <div class="ticket-date">
+                    <span>Raised on</span>
+                    18 Jul’23
+                </div>
+                <div class="mask-grp">
+                    <img src="./Assets/Mask-group.png">
+                    <img src="./Assets/Mask-group.png">
+                </div>
+                <p class="issueStatement">I'm facing a connectivity problem with my router. It suddenly stopped working,
+                    and I can't access the
+                    internet. It's causing some disruption in my work, and I need to get it fixed as soon as possible.
+                    Could you please assist by creating a support ticket for this issue? I really appreciate your help!
+                </p>
+                <a href="#" class="read-more">Read More</a>
+                <p class="sub-heading">Replies</p>
+            </div>
+            <div class="customer-reply">
+                <div class="customer-profile">
+                    <div class="customer-profile">
+                        <img src="./Assets/customer.png">
+                        <div>
+                            <p>Neeraj Upadhyay</p>
+                            <p class="designation">Support</p>
+                        </div>
+                    </div>
+                    <div class="cust-date">16 Sep’23</div>
+                </div>
+                <ol class="cust-reply-list">
+                    <li><p>go to power options in the control panel</p></li>
+                    <li><p>click ‘change plan setting’ in the power plan that you are using</p></li>
+                    <li><p>go to ‘change advanced power setting’</p></li>
+                    <li><p>another window will open… maximize the wireless adapter setting</p></li>
+                    <li><p>put the battery/plugged in mode to maximum performance</p></li>
+                </ol>
+                <div class="feedback">
+                    <img src="./Assets/okthumb.png">
+                    <p class="ml">Helpful</p>
+                    <img src="./Assets/nothumb.png">
+                    <p>Not Helpful</p>
+                </div>
+            </div>
+            <div class="customer-reply-submit">
+                <div class="profile">
+                    <div class="short-form">
+                        <span>HM</span>
+                    </div>
+                    <h4>Harsh Mehta</h4>
+                </div>
+                <form>
+                    <input type="text" placeholder="Type your message..."  class="form-input">
+                    <button class="form-submit-btn">Submit Reply</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
