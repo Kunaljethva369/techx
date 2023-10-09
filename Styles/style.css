@@ -493,9 +493,9 @@ header {
 
 .ticket-info-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     margin-top: 23px;
-    /* gap: 24px; */
+    gap: 24px;
 }
 
 .ticket-info-card {
@@ -833,6 +833,11 @@ input[name='priority'] {
     /* margin-right: 50px; */
 }
 
+.dash-board-container .ticket-info-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+}
+
 .updates-and-open {
     margin-left: auto;
     margin-right: auto;
@@ -927,7 +932,8 @@ input[name='priority'] {
 
 /* User Profile Start */
 
-.user-profile-container {
+.user-profile-container,
+.raise-ticket-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -965,7 +971,8 @@ input[name='priority'] {
 }
 
 .user-profile,
-.email-details {
+.email-details,
+.upload-container {
     display: flex;
 }
 
@@ -1028,24 +1035,126 @@ input[name='priority'] {
     padding: 22px 30px 28px 25px;
 }
 
-.address-detail form{
+.address-detail form {
     padding-top: 11px;
 }
 
-.address-detail .form-input{
+.address-detail .form-input {
     margin-top: 11px;
 }
 
-.address-detail .inline-form{
+.address-detail .inline-form {
     display: flex;
     gap: 11px;
 }
 
-.address-detail form .raise-ticket-btn{
-     margin-top: 18px;
+.address-detail form .raise-ticket-btn {
+    margin-top: 18px;
 }
 
 /* User Profile End */
+
+/* Raise a Ticket Start */
+
+.raise-ticket-container .upper-section {
+    width: 924px;
+    height: 303px;
+    border-radius: 15px;
+    border: 1px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    gap: 38px;
+}
+
+.raise-ticket-container .go-back {
+    width: 924px;
+    margin-bottom: 45px;
+}
+
+.raise-ticket-container .upper-section {
+    padding: 17px 25px 28px 25px;
+}
+
+.raise-ticket-container .upper-section .left-side {
+    width: 389px;
+    margin-bottom: 10px;
+}
+
+.raise-ticket-container .upper-section .right-side .text-area {
+    width: 444px;
+    height: 230px;
+}
+
+.raise-ticket-container .upper-section .right-side .text-area .form-input::placeholder {
+    line-height: 1;
+    vertical-align: top;
+}
+
+.raise-ticket-container .form-input {
+    margin-top: 11px;
+}
+
+.raise-ticket-container .raise-a-ticket-btn {
+    width: 230px;
+}
+
+.raise-ticket-container .upload-section {
+    width: 918px;
+    min-height: 164px;
+    border-radius: 15px;
+    border: 1px;
+    border: 1px solid rgba(231, 231, 231, 1);
+    margin-top: 26px;
+    padding: 33px 0px 33px 35px;
+}
+
+.upload-container {
+    gap: 21px;
+    margin-top: 11px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.upload-items.dotted {
+    height: 90px;
+    width: 90px;
+    border-radius: 8px;
+    border-style: dotted;
+    border-color: #DBDBDB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upload-items.dotted {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.upload-items.dotted .vertical-line {
+    width: 26px;
+    height: 10px;
+    border: 1px;
+    border-bottom: 1px solid rgba(236, 108, 33, 1);
+}
+
+.upload-items.dotted .horizontial-line {
+    width: 26px;
+    height: 22px;
+    border: 1px;
+    border-top: 1px solid rgba(236, 108, 33, 1);
+    rotate: 90deg;
+    position: absolute;
+    top: 35px;
+    left: 22%;
+}
+
+/* Raise a Ticket End */
 
 /* Mobile Screen to Tablet Screen */
 @media only screen and (max-width:767px) {
@@ -1433,6 +1542,7 @@ input[name='priority'] {
         grid-template-columns: auto auto;
         margin-left: 20px;
         padding-bottom: 10px;
+        row-gap: 10px;
     }
 
     .dash-board-container .ticket-info-container .ticket-info-card {
@@ -1504,6 +1614,7 @@ input[name='priority'] {
         margin-left: 20px;
         padding-bottom: 10px;
         padding-right: 20px;
+        gap: 10px;
     }
 
     .dash-board-container .ticket-info-container .ticket-info-card {
@@ -1709,6 +1820,7 @@ input[name='priority'] {
     .dash-board-container .ticket-info-container {
         grid-template-columns: auto;
         place-content: center;
+        row-gap: 10px;
     }
 
 
@@ -1772,30 +1884,193 @@ input[name='priority'] {
 
 /* User Profile Responsive Start */
 
-@media only screen and (max-width:520px) {
-    .user-profile-container{
+@media only screen and (max-width:480px) {
+
+    .user-profile-container,
+    .raise-ticket-container {
         padding: 61px 10px 10px;
     }
-    
-    .user-detail{
+
+    .user-detail {
         padding: 14px 14px;
     }
 
-    .email-details{
+    .email-details {
         gap: 0px;
         justify-content: space-between;
     }
 
-    .user-detail .cp{
+    .user-detail .cp {
         right: 14px;
     }
 
-    .go-back, .user-detail, .address-detail{
+    .go-back,
+    .user-detail,
+    .address-detail {
         width: 100%;
         height: 100%;
     }
 
-    .address-detail .inline-form{
+    .address-detail .inline-form {
         display: block;
     }
 }
+
+/* User Profile Responsive End */
+
+/* Raise a Ticket Responsive Start */
+
+@media only screen and (min-width:681px) and (max-width:950px) {
+    .user-profile-container .upper-section {
+        width: 95px;
+        margin: 0px auto;
+    }
+
+    .raise-ticket-container .upper-section {
+        padding: 10px 15px;
+    }
+
+    .raise-ticket-container .upper-section,
+    .raise-ticket-container .upload-section,
+    .raise-ticket-container .go-back {
+        width: 660px;
+        height: 100%;
+    }
+
+    .raise-ticket-container .go-back {
+        margin-bottom: 20px;
+    }
+
+    .raise-ticket-container .upper-section .left-side {
+        width: 330px;
+    }
+
+    .raise-ticket-container .upper-section .right-side .text-area {
+        width: 260px;
+    }
+
+    .upload-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        width: 95%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:680px) {
+    .user-profile-container .upper-section {
+        width: 95px;
+        margin: 0px auto;
+    }
+
+    .raise-ticket-container .upper-section {
+        padding: 10px 15px;
+    }
+
+    .raise-ticket-container .upper-section,
+    .raise-ticket-container .upload-section,
+    .raise-ticket-container .go-back {
+        width: 390px;
+        height: 100%;
+    }
+
+    .raise-ticket-container .go-back {
+        margin-bottom: 20px;
+    }
+
+    .raise-ticket-container .upper-section {
+        display: block;
+    }
+
+    .raise-ticket-container .upper-section .left-side {
+        width: 100%;
+    }
+
+    .raise-ticket-container .upper-section .right-side .text-area {
+        width: 100%;
+    }
+
+    .upload-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 15px;
+    }
+
+    .upload-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 15px;
+        width: 95%;
+        place-content: center;
+    }
+
+    .raise-ticket-container .upload-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        padding: 15px 15px;
+    }
+
+    .upload-items{
+        place-self: center;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .user-profile-container .upper-section {
+        width: 95px;
+        margin: 0px auto;
+    }
+
+    .raise-ticket-container .upper-section {
+        padding: 10px 15px;
+    }
+
+    .raise-ticket-container .upper-section,
+    .raise-ticket-container .upload-section,
+    .raise-ticket-container .go-back {
+        width: 100%;
+        height: 100%;
+    }
+
+    .raise-ticket-container .go-back {
+        margin-bottom: 20px;
+    }
+
+    .raise-ticket-container .upper-section {
+        display: block;
+    }
+
+    .raise-ticket-container .upper-section .left-side {
+        width: 100%;
+    }
+
+    .raise-ticket-container .upper-section .right-side .text-area {
+        width: 100%;
+    }
+
+    .upload-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 15px;
+        width: 95%;
+        place-content: center;
+    }
+
+    .raise-ticket-container .upload-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        padding: 15px 15px;
+    }
+
+    .raise-ticket-container .upper-section .left-side .priority-radio {
+        flex-direction: column;
+    }
+}
+
+/* Raise a Ticket Responsive End */

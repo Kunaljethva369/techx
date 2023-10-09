@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raise a Ticket</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
+            </div>
+            <div class="notification">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="profile">
+                <h4>Harsh Mehta</h4>
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+            </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="raise-ticket-container">
+            <div class="go-back">
+                <img src="./Assets/backArrow.png" style="height: 24px; cursor: pointer;">
+                <span class="go-back-text">Raise a Ticket</span>
+            </div>
+            <form>
+                <div class="upper-section">
+                    <div class="left-side">
+                        <form class="raise-ticke-form">
+                            <div class="form-label-input">
+                                <label class="form-label">Subject</label>
+                                <input type="text" class="form-input" fdprocessedid="xu1urs">
+                            </div>
+                            <div class="form-label-input">
+                                <label class="form-label">Device</label>
+                                <select class="form-input" fdprocessedid="zlygkf">
+                                    <option value=""></option>
+                                    <option value="iphone">Iphone</option>
+                                    <option value="realme">Realme</option>
+                                    <option value="samsung">Samsung</option>
+                                </select>
+                            </div>
+                            <div class="form-label priority">Priority</div>
+                            <div class="priority-radio">
+                                <div class="radio-btn">
+                                    <input type="radio" id="high" name="priority" value="high" checked="">
+                                    <label for="high">High</label><br>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="medium" name="priority" value="medium">
+                                    <label for="medium">Medium</label><br>
+                                </div>
+                                <div class="radio-btn">
+                                    <input type="radio" id="low" name="priority" value="low">
+                                    <label for="low">Low</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="right-side">
+                        <div class="form-label-input">
+                            <label class="form-label">Issue Description</label>
+                            <div class="text-area">
+                                <input type="text" class="form-input" placeholder="Write here...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-section">
+                    <div class="form-label">Upload Photos</div>
+                    <div class="upload-container">
+                        <div class="upload-items dotted">
+                            <div class="vertical-line"></div>
+                            <div class="horizontial-line"></div>
+                        </div>
+                        <div class="upload-items">
+                            <img src="./Assets/upload1.png">
+                        </div>
+                        <div class="upload-items">
+                            <img src="./Assets/upload2.png">
+                        </div>
+                        <div class="upload-items">
+                            <img src="./Assets/upload3.png">
+                        </div>
+                    </div>
+                </div>
+                <button class="form-submit-btn raise-a-ticket-btn">Raise a Ticket</button>
+            </form>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
