@@ -495,7 +495,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 23px;
-    gap: 24px;
+    /* gap: 24px; */
 }
 
 .ticket-info-card {
@@ -925,6 +925,128 @@ input[name='priority'] {
 
 /* dashBoard CSS End */
 
+/* User Profile Start */
+
+.user-profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 61px;
+}
+
+.go-back {
+    margin-top: 18px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 460px;
+    gap: 6px;
+}
+
+.go-back-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+.user-detail {
+    width: 460px;
+    height: 176px;
+    border-radius: 16px;
+    border: 1px solid rgba(219, 219, 219, 1);
+    background: rgba(217, 221, 228, 0.19);
+    padding: 28px 29px 28px 30px;
+    margin-top: 32px;
+    display: grid;
+    position: relative;
+}
+
+.user-profile,
+.email-details {
+    display: flex;
+}
+
+.user-profile .short-form {
+    margin-left: 0px;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+}
+
+.user-profile h4 {
+    margin-left: 14px;
+    width: 65px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 26px;
+    letter-spacing: 0em;
+}
+
+.user-detail .cp {
+    position: absolute;
+    top: 28px;
+    right: 29px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #EC6C21;
+    text-decoration: none;
+}
+
+.email-details {
+    gap: 76px;
+    margin-top: 24px;
+}
+
+.email-details span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: rgba(120, 120, 120, 1);
+}
+
+.email-details p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    color: rgba(85, 85, 85, 1);
+}
+
+.address-detail {
+    margin-top: 18px;
+    width: 460px;
+    height: 247px;
+    border-radius: 16px;
+    border: 1px solid rgba(219, 219, 219, 1);
+    background: rgba(217, 221, 228, 0.19);
+    padding: 22px 30px 28px 25px;
+}
+
+.address-detail form{
+    padding-top: 11px;
+}
+
+.address-detail .form-input{
+    margin-top: 11px;
+}
+
+.address-detail .inline-form{
+    display: flex;
+    gap: 11px;
+}
+
+.address-detail form .raise-ticket-btn{
+     margin-top: 18px;
+}
+
+/* User Profile End */
+
 /* Mobile Screen to Tablet Screen */
 @media only screen and (max-width:767px) {
     .container {
@@ -958,7 +1080,6 @@ input[name='priority'] {
         right: -8px;
     }
 }
-
 
 
 /* navbar Mobile Responsive into Hamburger Start */
@@ -1215,12 +1336,12 @@ input[name='priority'] {
 
 /* Dashboard screen responsive Start */
 
-.raised-ticket-below-desk{
+.raised-ticket-below-desk {
     display: block;
 }
 
 @media only screen and (min-width:1301px) and (max-width:1400px) {
-    .dash-board-container .ticket-info-container{
+    .dash-board-container .ticket-info-container {
         gap: 10px;
     }
 }
@@ -1232,13 +1353,13 @@ input[name='priority'] {
 }
 
 @media only screen and (max-width:1383px) {
-    .chart-section{
+    .chart-section {
         width: 100%;
     }
 }
 
 @media only screen and (max-width:1000px) {
-    .raised-ticket-below-desk{
+    .raised-ticket-below-desk {
         display: none;
     }
 }
@@ -1281,7 +1402,7 @@ input[name='priority'] {
         display: block;
     }
 
-    .chart img{
+    .chart img {
         margin: 0px auto;
     }
 
@@ -1327,7 +1448,7 @@ input[name='priority'] {
         position: relative;
         padding-top: 20px;
         margin-left: 0px;
-        margin-right: 0px;  
+        margin-right: 0px;
     }
 
     .updates-and-open .raised-ticket-below {
@@ -1466,7 +1587,7 @@ input[name='priority'] {
     .dash-board-container .ticket-info-card {
         width: 285px;
     }
-    
+
     .updates-and-open {
         margin-left: 0px;
         margin-right: 0px;
@@ -1532,7 +1653,7 @@ input[name='priority'] {
         margin-top: 20px;
     }
 
-    .upper-section{
+    .upper-section {
         position: relative;
     }
 
@@ -1648,3 +1769,33 @@ input[name='priority'] {
 }
 
 /* Dashboard screen responsive Start End */
+
+/* User Profile Responsive Start */
+
+@media only screen and (max-width:520px) {
+    .user-profile-container{
+        padding: 61px 10px 10px;
+    }
+    
+    .user-detail{
+        padding: 14px 14px;
+    }
+
+    .email-details{
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    .user-detail .cp{
+        right: 14px;
+    }
+
+    .go-back, .user-detail, .address-detail{
+        width: 100%;
+        height: 100%;
+    }
+
+    .address-detail .inline-form{
+        display: block;
+    }
+}

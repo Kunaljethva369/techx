@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./Styles/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Lato:wght@300;400&family=Montserrat+Alternates:wght@100&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.7/lottie.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <img class="header-logo" src="./Assets/techxpert-logo 1.png">
+            <nav class="nav">
+                <ul>
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+            <div class="raise-ticket">
+                <button class="raise-ticket-btn">Rasie a Ticket</button>
+            </div>
+            <div class="notification">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="profile">
+                <h4>Harsh Mehta</h4>
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+            </div>
+            <div id="hamburger">
+                <div id="menu-bar" class="">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-navigation" id="movnav">
+            <div class="notification-mob all-mob-nav d-none">
+                <img src="./Assets/notification.png">
+            </div>
+            <div class="cross-mob d-none" id="cross">
+                <img src="./Assets/crossmob.svg" width="20px" />
+            </div>
+            <div class="profile-mob all-mob-nav d-none">
+                <div class="short-form">
+                    <span>HM</span>
+                </div>
+                <h4>Harsh Mehta</h4>
+            </div>
+            <nav class="nav-mob">
+                <ul class="all-mob-nav d-none">
+                    <li class="active"><a href="/welcomeDashBoard.html">Dashboard</a></li>
+                    <li><a href="/noticketopen.html">Tickets</a></li>
+                    <li><a href="#">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="user-profile-container">
+            <div class="go-back">
+                <img src="./Assets/backArrow.png" style="height: 24px; cursor: pointer;">
+                <span class="go-back-text">User Profile</span>
+            </div>
+            <div class="user-detail">
+                <div class="user-profile">
+                    <span class="short-form">HM</span>
+                    <h4>Harsh Mehta</h4>
+                </div>
+                <a href="#" class="cp">Change Password</a>
+                <div class="email-details">
+                    <div>
+                        <span>Email</span>
+                        <p>design@ruchiram.in</p>
+                    </div>
+                    <div>
+                        <span>Mobile</span>
+                        <p>7666 866 051</p>
+                    </div>
+                </div>
+            </div>
+            <div class="address-detail">
+                <span class="form-label">Address</span>
+                <form>
+                    <div class="inline-form">
+                        <input type="text" class="form-input w-50" placeholder="Zipcode">
+                        <input type="text" class="form-input w-50" placeholder="City">
+                    </div>
+                    <input type="text" class="form-input" placeholder="Enter Address">
+                    <button class="raise-ticket-btn">Update Address</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="./JS/index.js"></script>
+</body>
+
+</html>
