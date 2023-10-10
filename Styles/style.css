@@ -23,6 +23,7 @@ html:focus-within {
 html,
 body {
     height: 100%;
+    position: relative;
 }
 
 body {
@@ -456,6 +457,7 @@ header {
     max-width: 1300px;
     margin: 0px auto;
     padding-top: 61px;
+    min-height: 92vh;
 }
 
 .pending-ticket .heading {
@@ -940,10 +942,13 @@ input[name='priority'] {
 .ticket-details {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     padding-top: 61px;
+}
+
+.user-profile-container{
+    height: 92vh;
 }
 
 .go-back {
@@ -1386,11 +1391,23 @@ input[name='priority'] {
 /* Ticket Details End */
 
 /* Footer Start */
-footer{
+footer {
     padding: 20px;
     text-align: center;
     font-size: 12px;
+    margin: 0px auto;
+    width: 100%;
 }
+
+.fb.b{
+    position: fixed;
+    bottom: 10px;
+}
+
+.fb.b.L{
+    bottom: -9px;
+}
+
 /* Footer End */
 
 
@@ -1401,6 +1418,7 @@ footer{
 @media only screen and (max-width:767px) {
     .container {
         padding: 10px;
+        height: 95vh;
     }
 
     .left-img {
@@ -1742,7 +1760,7 @@ footer{
 
     .upper-section .disturbed-tickets {
         position: absolute;
-        top: 23%;
+        top: 160px;
         left: 50%;
         transform: translate(-50%);
     }
@@ -1891,7 +1909,7 @@ footer{
 
     .upper-section .disturbed-tickets {
         position: absolute;
-        top: 23%;
+        top: 220px;
         left: 50%;
         transform: translate(-50%);
     }
@@ -2135,6 +2153,7 @@ footer{
 
     .user-detail {
         padding: 14px 14px;
+        margin-top: 20px;
     }
 
     .email-details {
@@ -2151,6 +2170,10 @@ footer{
     .address-detail {
         width: 100%;
         height: 100%;
+    }
+
+    .address-detail{
+        margin-top: 12px;
     }
 
     .address-detail .inline-form {
@@ -2332,7 +2355,7 @@ footer{
         flex-direction: column;
     }
 
-    .ticket-description .ticket-detail-items{
+    .ticket-description .ticket-detail-items {
         display: grid;
         grid-template-columns: 2fr 2fr;
         gap: 10px;
