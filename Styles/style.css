@@ -767,7 +767,7 @@ select.form-input {
     appearance: none;
 }
 
-select.form-input{
+select.form-input {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-image: url("/Assets/downArrow.png");
@@ -1099,9 +1099,9 @@ input[name='priority'] {
     width: 444px;
 }
 
-.raise-ticket-container .upper-section .right-side .text-area .form-input::placeholder {
-    line-height: 1;
-    vertical-align: top;
+.raise-ticket-container .upper-section .right-side .text-area .form-input{
+    height: 230px;
+    padding: 15px 13px;
 }
 
 .raise-ticket-container .form-input {
@@ -1233,11 +1233,13 @@ input[name='priority'] {
     line-height: 2.7;
 }
 
-.ticket-description .sub-heading {
-    color: black;
+.ticket-details .sub-heading {
+    color: #000;
     font-weight: 700;
-    line-height: 2;
-    margin-left: -18px;
+    text-align: left;
+    margin-left: 20px;
+    width: 924px;
+    margin-top: 41px;
 }
 
 .customer-reply {
@@ -1245,7 +1247,7 @@ input[name='priority'] {
     height: 216px;
     border-radius: 15px;
     border: 1px;
-    margin-top: 45px;
+    margin-top: 12px;
     border: 1px solid rgba(231, 231, 231, 1);
     padding: 14px 22px;
 }
@@ -1307,6 +1309,7 @@ input[name='priority'] {
 
 .feedback img {
     margin-right: 6px;
+    cursor: pointer;
 }
 
 .feedback p {
@@ -1349,12 +1352,26 @@ input[name='priority'] {
     margin-top: 14px;
 }
 
+.customer-reply-submit form .form-input {
+    background-image: url("/Assets/rightArrow.png");
+    background-repeat: no-repeat;
+    background-position-x: 99%;
+    background-position-y: 12px;
+    border-radius: 5px;
+    margin-right: 2rem;
+    padding-right: 2rem;
+}
+
 .customer-reply-submit .form-submit-btn {
     width: 133px;
     font-size: 16px;
 }
 
 /* Ticket Details End */
+
+
+
+/* Responsive  Start */
 
 /* Mobile Screen to Tablet Screen */
 @media only screen and (max-width:767px) {
@@ -2242,7 +2259,7 @@ input[name='priority'] {
     .raise-ticket-container .middle-section,
     .raise-ticket-container .upload-section,
     .raise-ticket-container .go-back {
-        width: 100%;
+        width: 98%;
         height: 100%;
     }
 
@@ -2258,6 +2275,7 @@ input[name='priority'] {
     .raise-ticket-container .middle-section,
     .raise-ticket-container .right-side {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .raise-ticket-container .upper-section .left-side {
@@ -2291,3 +2309,32 @@ input[name='priority'] {
 }
 
 /* Raise a Ticket Responsive End */
+
+/* Ticket Details Responsive Start */
+
+@media only screen and (max-width:1204px) {
+    .ticket-details{
+        padding: 61px 10px 10px;
+    }
+
+    .ticket-details .go-back,
+    .ticket-details .sub-heading,
+    .ticket-details .ticket-description,
+    .ticket-details .customer-reply,
+    .ticket-details .customer-reply-submit{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ticket-details .customer-reply-submit .profile{
+        display: flex;
+    }
+
+    .ticket-description .ticket-name p{
+        margin-top: 8px;
+    }
+}
+
+/* Ticket Details Responsive End */
+
+/* Responsvie  Ends */
