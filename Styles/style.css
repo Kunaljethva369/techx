@@ -2038,6 +2038,7 @@ input[name='priority'] {
         grid-template-columns: auto;
         place-content: center;
         row-gap: 10px;
+        margin-bottom: 10px;
     }
 
 
