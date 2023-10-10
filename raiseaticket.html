@@ -74,39 +74,37 @@
                 <img src="./Assets/backArrow.png" style="height: 24px; cursor: pointer;">
                 <span class="go-back-text">Raise a Ticket</span>
             </div>
-            <form>
+            <form class="raise-ticket-form">
                 <div class="upper-section">
                     <div class="left-side">
-                        <form class="raise-ticke-form">
-                            <div class="form-label-input">
-                                <label class="form-label">Subject</label>
-                                <input type="text" class="form-input" fdprocessedid="xu1urs">
+                        <div class="form-label-input">
+                            <label class="form-label">Subject</label>
+                            <input type="text" class="form-input" fdprocessedid="xu1urs">
+                        </div>
+                        <div class="form-label-input">
+                            <label class="form-label">Support Required</label>
+                            <select class="form-input" fdprocessedid="zlygkf">
+                                <option value=""></option>
+                                <option value="iphone">Iphone</option>
+                                <option value="realme">Realme</option>
+                                <option value="samsung">Samsung</option>
+                            </select>
+                        </div>
+                        <div class="form-label priority">Priority</div>
+                        <div class="priority-radio">
+                            <div class="radio-btn">
+                                <input type="radio" id="high" name="priority" value="high" checked="">
+                                <label for="high">High</label><br>
                             </div>
-                            <div class="form-label-input">
-                                <label class="form-label">Device</label>
-                                <select class="form-input" fdprocessedid="zlygkf">
-                                    <option value=""></option>
-                                    <option value="iphone">Iphone</option>
-                                    <option value="realme">Realme</option>
-                                    <option value="samsung">Samsung</option>
-                                </select>
+                            <div class="radio-btn">
+                                <input type="radio" id="medium" name="priority" value="medium">
+                                <label for="medium">Medium</label><br>
                             </div>
-                            <div class="form-label priority">Priority</div>
-                            <div class="priority-radio">
-                                <div class="radio-btn">
-                                    <input type="radio" id="high" name="priority" value="high" checked="">
-                                    <label for="high">High</label><br>
-                                </div>
-                                <div class="radio-btn">
-                                    <input type="radio" id="medium" name="priority" value="medium">
-                                    <label for="medium">Medium</label><br>
-                                </div>
-                                <div class="radio-btn">
-                                    <input type="radio" id="low" name="priority" value="low">
-                                    <label for="low">Low</label>
-                                </div>
+                            <div class="radio-btn">
+                                <input type="radio" id="low" name="priority" value="low">
+                                <label for="low">Low</label>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="right-side">
                         <div class="form-label-input">
@@ -115,6 +113,35 @@
                                 <textarea type="text" class="form-input" placeholder="Write here..."></textarea>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="middle-section">
+                    <div class="form-label-input">
+                        <label class="form-label">Company Name</label>
+                        <select class="form-input" fdprocessedid="zlygkf">
+                            <option value=""></option>
+                            <option value="iphone">Dell</option>
+                            <option value="realme">Hp</option>
+                            <option value="samsung">Asus</option>
+                        </select>
+                    </div>
+                    <div class="form-label-input">
+                        <label class="form-label">Model Number</label>
+                        <select class="form-input" fdprocessedid="zlygkf">
+                            <option value=""></option>
+                            <option value="iphone">LAT1000AAE</option>
+                            <option value="realme">LAT2300AAS</option>
+                            <option value="samsung">LAT3000AAE</option>
+                        </select>
+                    </div>
+                    <div class="form-label-input">
+                        <label class="form-label">Year of Manufacture</label>
+                        <select class="form-input" fdprocessedid="zlygkf">
+                            <option value=""></option>
+                            <option value="iphone">2020</option>
+                            <option value="realme">2021</option>
+                            <option value="samsung">2024</option>
+                        </select>
                     </div>
                 </div>
                 <div class="upload-section">
