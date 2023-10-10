@@ -385,6 +385,7 @@ header {
 .notification {
     position: relative;
     margin-right: 18px;
+    cursor: pointer;
 }
 
 .notification::before,
