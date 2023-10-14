@@ -84,6 +84,12 @@ svg {
     text-align: center;
 }
 
+
+.container.forgot-passowrd-container .form{
+    max-width: 303px;
+    margin: 0px auto;
+}
+
 .logo-img {
     margin: 36px auto auto;
 }
@@ -124,14 +130,13 @@ svg {
 }
 
 .line {
-    width: 303px;
-    border: 1px;
+    max-width: 303px;
     border: 1px solid #E6E6E6;
     margin: 22px auto;
 }
 
 .form-input {
-    width: 100%;
+    min-width: 303px;
     height: 50px;
     border-radius: 5px;
     border: 1px solid #D7D7D7;
@@ -140,12 +145,39 @@ svg {
     outline: none;
 }
 
+.form-input.dashboard-form {
+    min-width: 335px;
+}
+
+.form-input.raiseticketinput {
+    min-width: 389px;
+}
+
+.form-input.raiseticketselect {
+    min-width: 273px;
+    margin-right: 0px;
+}
+
+.form-input.z-city{
+    min-width: 197px;
+}
+
+.form-input.email-add{
+    min-width: 405px;
+}
+
+.form-input.your-message{
+    min-width: 867px
+}
+
 .form .form-input-mt {
     margin-top: 15px;
 }
 
 .form .password-eye {
     position: relative;
+    max-width: 303px;
+    margin: 0px auto;
 }
 
 .form .password-eye img {
@@ -156,7 +188,7 @@ svg {
 }
 
 .form-submit-btn {
-    width: 100%;
+    min-width: 303px;
     height: 50px;
     background-color: #EC6C21;
     border-radius: 5px;
@@ -166,6 +198,10 @@ svg {
     cursor: pointer;
     font-weight: 400;
     margin-top: 22px;
+}
+
+.form-submit-btn.dashboard-btn{
+    min-width: 335px;
 }
 
 .form-submit-light {
@@ -248,7 +284,7 @@ svg {
     line-height: 48px;
     letter-spacing: 0em;
     text-align: center;
-    margin-top: 57px;
+    margin: 57px auto 0px auto;;
     color: #101010;
     max-width: 331px;
 }
@@ -947,7 +983,7 @@ input[name='priority'] {
     padding-top: 61px;
 }
 
-.user-profile-container{
+.user-profile-container {
     height: 92vh;
 }
 
@@ -1084,6 +1120,7 @@ input[name='priority'] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2px 28px 25px 28px;
+    gap: 26px;
 }
 
 .raise-ticket-container .go-back {
@@ -1102,12 +1139,12 @@ input[name='priority'] {
 
 .raise-ticket-container .upper-section .right-side .text-area {
     height: 230px;
-    width: 444px;
 }
 
 .raise-ticket-container .upper-section .right-side .text-area .form-input {
     height: 230px;
     padding: 15px 13px;
+    min-width: 444px;
 }
 
 .raise-ticket-container .form-input {
@@ -1399,12 +1436,12 @@ footer {
     width: 100%;
 }
 
-.fb.b{
+.fb.b {
     position: fixed;
     bottom: 10px;
 }
 
-.fb.b.L{
+.fb.b.L {
     bottom: -9px;
 }
 
@@ -2172,7 +2209,7 @@ footer {
         height: 100%;
     }
 
-    .address-detail{
+    .address-detail {
         margin-top: 12px;
     }
 
@@ -2408,3 +2445,29 @@ footer {
 /* Ticket Details Responsive End */
 
 /* Responsvie  Ends */
+
+/* Form Input min-width */
+
+@media only screen and (max-width:375px) {
+
+    .form-input,
+    .form-submit-btn {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .form-input.raiseticketinput,
+    .form-input.raiseticketselect,
+    .raise-ticket-container .upper-section .right-side .text-area .form-input,
+    .form-input.email-add,
+    .form-input.your-message {
+        min-width: 100%;
+    }
+}
+
+@media only screen and (max-width:475px) {
+    .form-input.z-city{
+        min-width: 100%;
+    }
+}
