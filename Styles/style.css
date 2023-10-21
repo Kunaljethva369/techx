@@ -596,6 +596,11 @@ header {
     color: #0C4D89;
 }
 
+.tag-capsuel.regular {
+    background: rgba(1, 150, 190, 0.2);    
+    color: rgba(1, 150, 190, 1);
+}
+
 .tag-capsuel p {
     font-size: 12px;
     font-weight: 400;
