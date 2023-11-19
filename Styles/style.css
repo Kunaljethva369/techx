@@ -1526,7 +1526,7 @@ footer {
 /* hero-section Start */
 .hero-bg-color {
     background-color: rgba(250, 250, 250, 1);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .hero-section {
@@ -1535,6 +1535,7 @@ footer {
     max-width: 1287px;
     margin: 0px auto;
     padding-top: 150px;
+    padding-bottom: 121px;
 }
 
 .hero-section .left-section {
@@ -1654,8 +1655,8 @@ footer {
 .about-section {
     max-width: 1309px;
     margin: 0px auto;
-    min-height: 100vh;
     padding-top: 133px;
+    padding-bottom: 143px;
     display: flex;
     align-items: center;
 }
@@ -1810,7 +1811,7 @@ footer {
 .ourwork-section {
     background: rgba(236, 108, 33, 0.15);
     max-width: 1439.37px;
-    margin: 0px 20px 0px auto;
+    margin: 0px auto;
     padding-top: 64px;
     padding-bottom: 58px;
 }
