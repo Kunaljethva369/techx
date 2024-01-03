@@ -454,6 +454,7 @@ svg {
     border-radius: 8px;
     background: rgba(236, 108, 33, 0.2);
     color: #EC6C21;
+    cursor: pointer;
 }
 
 .welcome-screen {
@@ -1524,7 +1525,7 @@ footer {
         display: none;
     }
 
-    .header-container .header-logo{
+    .header-container .header-logo {
         margin: 8px 20px 6px 16px;
     }
 
@@ -1633,7 +1634,7 @@ footer {
 
 @media only screen and (max-width:480px) {
 
-    .header-container .header-logo{
+    .header-container .header-logo {
         width: 105px;
     }
 }
@@ -2477,4 +2478,41 @@ footer {
     .form-input.z-city {
         min-width: 100%;
     }
+}
+
+.profileOptions {
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    background-color: #EC6C21;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltipArrow {
+    position: absolute;
+    top: 100%;
+    right: 2px;
+    border: 8px solid transparent;
+    border-top-color: #EC6C21;
+    rotate: 180deg;
+    top: -15px;
+}
+
+.short-form:hover .profileOptions {
+    display: flex;
+}
+
+.option {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #EC6C21;
+    color: black;
 }
